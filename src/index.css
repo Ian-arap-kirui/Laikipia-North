@@ -1,68 +1,109 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,700;1,800&display=swap");
 
 body {
   margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  background-color: ivory;
+}
+:root {
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+}
+main {
+  scroll-snap-type: x mandatory;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+main > section {
+  scroll-snap-align: start;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
 }
+h2 {
+  font-size: 39px;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+p,
+li {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+span {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* Buttons */
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.primaryButton {
+  background: #219d80;
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
+  font-family: "Playfair Display", serif;
 }
-button:hover {
-  border-color: #646cff;
+.secondaryButton {
+  border: 2px solid #219d80;
+  cursor: pointer;
+  color: white;
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+  background: transparent;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.tertiaryButton {
+  cursor: pointer;
+  background: #219d80;
+  color: white;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
 }
