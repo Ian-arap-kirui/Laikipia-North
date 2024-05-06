@@ -7,10 +7,21 @@ body {
   font-family: "Montserrat", serif;
   /* background-color: ivory; */
   background-color: #fff;
+  background-color: var(--whiteColor);
 }
 :root {
   font-family: "Montserrat", serif;
-  background-color: #fff;
+  --fontFamily: "Montserrat", sans-serif;
+  --fontFamily2: "Roboto", sans-serif;
+  background-color: var(--whiteColor);
+  --mainColor: #00aa55;
+  --secondColor: #00aa5530;
+  --whiteColor: #ffffff;
+  --blackColor: #1f2428;
+  --paragraphColor: #666666;
+  --card-title-fontSize: 22px;
+  --transition: 0.5s;
+  --boxShadow: rgba(80, 79, 79, 0.1) 0px 0px 16px;
 }
 main {
   scroll-snap-type: x mandatory;
@@ -38,7 +49,8 @@ h6 {
   font-family: "Montserrat", serif;
 }
 h1 {
-  font-size: 48px;
+  font-size: 54px;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }
@@ -89,16 +101,25 @@ ul {
 /* Buttons */
 
 .primaryButton {
-  background: #219d80;
-  display: inline-flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-family: "Montserrat", serif;
+  padding: 12px 40px;
+  border-radius: 0;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border: 1px solid var(--mainColor);
+  overflow: hidden !important;
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--fontFamily2);
+}
+.primaryButton:hover {
+  border-radius: 20px 5px 20px 5px;
+  color: var(--whiteColor);
+  background-color: var(--blackColor);
 }
 .secondaryButton {
   border: 2px solid #219d80;
@@ -121,4 +142,9 @@ ul {
   align-items: center;
   gap: 10px;
   font-family: "Montserrat", serif;
+}
+.read-more-btn {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
 }
