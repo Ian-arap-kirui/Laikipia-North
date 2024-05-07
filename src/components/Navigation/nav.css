@@ -1,0 +1,125 @@
+.Nav {
+  width: 100lvw;
+}
+.topBar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topBarWrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+.navIcon {
+  color: var(--mainColor);
+}
+.leftTopInner,
+.rightTopInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.mailLink,
+.loginLink {
+  color: white;
+  text-decoration: none;
+}
+.mailLink:hover,
+.loginLink:hover {
+  text-decoration: underline;
+  transition: var(--transition) ease-in-out all;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.navWrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+.links > a {
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+  margin-left: 14px;
+  margin-right: 14px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.links > a.active {
+  color: var(--mainColor);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.navRight {
+  width: 57%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.linkName {
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+}
+.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  padding: 0px;
+  background-color: var(--whiteColor) !important;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+.navWrapper > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainRightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 1550px) {
+  .topBar,
+  .nav {
+    width: 100%;
+  }
+}
