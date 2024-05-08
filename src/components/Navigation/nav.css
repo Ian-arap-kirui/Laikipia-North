@@ -1,5 +1,10 @@
 .Nav {
-  width: 100lvw;
+  width: 99.1lvw;
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 .topBar {
   background-color: black;
@@ -90,12 +95,6 @@
   }
 }
 .sticky {
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99999;
   padding: 0px;
   background-color: var(--whiteColor) !important;
   -webkit-transition: 0.5s ease-in-out;

@@ -1,5 +1,6 @@
 import MainNav from "./MainNav";
 import TopBar from "./TopBar";
+import "./nav.css";
 
 const Nav = () => {
   return (

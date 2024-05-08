@@ -22,6 +22,7 @@ body {
   --card-title-fontSize: 22px;
   --transition: 0.5s;
   --boxShadow: rgba(80, 79, 79, 0.1) 0px 0px 16px;
+  overflow-x: hidden;
 }
 main {
   scroll-snap-type: x mandatory;
@@ -82,6 +83,7 @@ h6 {
 p,
 li {
   font-size: 16px;
+  line-height: 21px;
   font-weight: lighter;
   margin: 0;
   padding: 0;

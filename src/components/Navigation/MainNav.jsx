@@ -4,7 +4,7 @@ import "./nav.css";
 import NavLinks from "./NavLinks";
 const MainNav = () => {
   return (
-    <nav className="nav sticky">
+    <div className="nav sticky">
       <div className="navWrapper">
         <div className="logoContainer">
           <img src="" alt="logo" />
@@ -17,7 +17,7 @@ const MainNav = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
