@@ -42,6 +42,7 @@
 .serviceCard:hover .servCardIcon {
   color: var(--whiteColor);
   background-color: var(--mainColor);
+  transform: rotateY(180deg); /* Flips the icon horizontally */
 }
 .servCardIcon::after {
   content: "";
