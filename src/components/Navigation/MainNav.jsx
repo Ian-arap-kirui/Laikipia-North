@@ -7,7 +7,7 @@ const MainNav = () => {
     <div className="nav sticky">
       <div className="navWrapper">
         <div className="logoContainer">
-          <img src="" alt="logo" />
+          <img src="" alt="logo" loading="lazy" />
         </div>
         <div className="navRight">
           <NavLinks />

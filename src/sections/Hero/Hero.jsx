@@ -24,7 +24,7 @@ const Hero = () => {
             <button className="primaryButton">Learn More</button>
           </div>
           <div className="heroRight">
-            <img src={heroImg} alt="banner image" />
+            <img src={heroImg} alt="banner image" loading="lazy" />
             <a href="" className="playIcon">
               <FontAwesomeIcon icon={faPlay} />
             </a>

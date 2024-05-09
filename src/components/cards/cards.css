@@ -1,0 +1,94 @@
+.serviceCard {
+  box-shadow: var(--boxShadow);
+  margin: 30px 0;
+  position: relative;
+}
+.serviceCardImgcont {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.serviceCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.servCardIcon {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: var(--mainColor);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: var(--whiteColor);
+  -webkit-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+  position: absolute;
+  bottom: 210px;
+  left: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+.serviceCard:hover .servCardIcon {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+.servCardIcon::after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: var(--mainColor);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.serviceCardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 16px;
+  padding: 20px;
+}
+.serviceCardText > h4 > a {
+  margin-bottom: 12px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+.serviceCardText > a {
+  color: black;
+  text-decoration: none;
+}
+.serviceCard:hover .serviceCardText > a {
+  color: var(--mainColor);
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.serviceCard:hover .serviceCardText > h4 > a {
+  color: var(--mainColor);
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.serviceCardText > p {
+  padding: 0;
+  margin: 0;
+  text-align: start;
+}
