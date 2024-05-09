@@ -12,10 +12,10 @@ const ServSection = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    speed: 2000,
+    lazyLoad: true,
+    autoplay: true,
     autoplaySpeed: 2000,
-    cssEase: "linear",
+    pauseOnHover: true,
     nextArrow: <FontAwesomeIcon icon={faLongArrowAltRight} />,
     prevArrow: <FontAwesomeIcon icon={faLongArrowAltLeft} />,
     responsive: [
@@ -24,8 +24,6 @@ const ServSection = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true,
         },
       },
       {
