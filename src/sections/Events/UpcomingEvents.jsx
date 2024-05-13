@@ -6,6 +6,7 @@ import "./events.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import UpcomingEventsCard from "../../components/cards/UpcomingEventsCard";
 import Slider from "react-slick";
+import SectionHeader from "../../components/Headers/SectionHeader";
 const UpcomingEvents = () => {
   var settings = {
     dots: false,
@@ -46,11 +47,12 @@ const UpcomingEvents = () => {
   return (
     <section className="upcomingEvents">
       <div className="eventsHeader">
-        <h3>Upcoming Events</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          iusto sunt{" "}
-        </p>
+        <SectionHeader
+          title={"Upcoming Events"}
+          subtitle={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+          }
+        />
       </div>
       <div className="eventsContent">
         <Slider {...settings}>

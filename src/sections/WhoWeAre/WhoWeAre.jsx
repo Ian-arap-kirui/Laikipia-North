@@ -2,18 +2,44 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./whoWeAre.css";
 import { faLandmarkDome } from "@fortawesome/free-solid-svg-icons";
 import weAreImg from "../../assets/heroImg1.jpg";
-const WhoWeAre = () => {
+import SectionHeader from "../../components/Headers/SectionHeader";
+const WhoWeAre = ({ title }) => {
   return (
     <section className="weAre">
-      <div className="weAreContainer">
+      {title === "cityEvents" ? (
+        <div className="weAreHeader">
+          <SectionHeader
+            title={"Explore City Events"}
+            subtitle={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+            }
+          />
+        </div>
+      ) : null}
+
+      <div
+        className={`weAreContainer ${
+          title === "cityEvents" ? "exploreCity" : ""
+        }`}
+      >
         <div className="weAreLeft">
           <img src={weAreImg} alt="image" loading="lazy" />
         </div>
-        <div className="weAreRight">
-          <div className="weAreText">
+        <div className="weAreRight ">
+          <div
+            className={`weAreText ${
+              title === "cityEvents" ? "exploreCityText" : ""
+            }`}
+          >
             <div className="weAreTitle">
-              <span>Who we are</span>
-              <h3>Laikipia North Consituency</h3>
+              {title === "cityEvents" ? (
+                <h3>Plan A Great City That Provides The Essence Of Success</h3>
+              ) : (
+                <>
+                  <span>Who we are</span>
+                  <h3>Laikipia North Consituency</h3>
+                </>
+              )}
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, facilis? Officia autem praesentium porro dolore
@@ -27,7 +53,12 @@ const WhoWeAre = () => {
                 <FontAwesomeIcon icon={faLandmarkDome} />
               </div>
               <div className="weAreList">
-                <h4>Our Role Is To:</h4>
+                {title === "cityEvents" ? (
+                  <h4>Sustainable Innovation Is Our Pathway:</h4>
+                ) : (
+                  <h4>Our Role Is To:</h4>
+                )}
+
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, officia ratione consequuntur error, natus

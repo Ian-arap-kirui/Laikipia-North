@@ -1,0 +1,20 @@
+.counselTestimonials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5em 0;
+  background-color: #f9fbfe;
+  padding: 3em;
+}
+.counselTestimonialContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4em 0 6em;
+  position: relative;
+}

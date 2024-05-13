@@ -6,6 +6,7 @@ import {
   faLongArrowAltLeft,
   faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons";
+import SectionHeader from "../../components/Headers/SectionHeader";
 const ServSection = () => {
   var settings = {
     dots: false,
@@ -46,15 +47,12 @@ const ServSection = () => {
   return (
     <section className="servSection">
       <div className="servSectionContainer">
-        <div className="servSectionHeader">
-          <h3>Find Governmental Services</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            suscipit maiores officiis sapiente officia. Dolorem quis rem totam
-            commodi quisquam, quas error unde dignissimos, cumque ea iure,
-            aspernatur fugiat non.
-          </p>
-        </div>
+        <SectionHeader
+          title={"Find Governmental Services"}
+          subtitle={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+          }
+        />
         <div className="servSectionContent">
           <Slider {...settings}>
             <ServiceCards />
