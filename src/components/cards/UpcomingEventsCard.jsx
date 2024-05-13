@@ -1,0 +1,29 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import EventImg from "../../assets/business.jpg";
+import "./cards.css";
+import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+const UpcomingEventsCard = () => {
+  return (
+    <div className="upcomingEventCard">
+      <img src={EventImg} alt="" />
+      <div className="eventsDetails">
+        <ul>
+          <li>Conference</li>
+          <li>Oct 14, 2024</li>
+        </ul>
+        <h4>Annual General Meeting</h4>
+        <p>
+          <FontAwesomeIcon icon={faLocationPin} />
+          <a href="./" targer="_blank">
+            Laikipia , Kenya{" "}
+          </a>
+        </p>
+        <a href="/" className="read-more-btn">
+          Read More
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default UpcomingEventsCard;
