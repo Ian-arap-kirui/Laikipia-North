@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./cards.css";
+import "./cards-cont.css";
 import { faCity, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
 const FunFactsCard = () => {
   return (

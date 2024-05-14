@@ -1,18 +1,25 @@
 import "./cards.css";
+import "./cards-cont.css";
 import servImg from "../../assets/business.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-const ServiceCards = () => {
+const ServiceCards = ({ carDFor }) => {
   return (
     <div className="serviceCard">
       <div className="serviceCardImgCont">
         <Link to={"/"}>
           <img src={servImg} alt="" className="serviceCardImg" loading="lazy" />
         </Link>
-        <div className="servCardIcon">
-          <FontAwesomeIcon icon={faBriefcase} />
-        </div>
+        {carDFor === "latestBlogs" ? (
+          <>blogdetails</>
+        ) : carDFor === "serviceCards" ? (
+          <>
+            <div className="servCardIcon">
+              <FontAwesomeIcon icon={faBriefcase} />
+            </div>
+          </>
+        ) : null}
       </div>
       <div className="serviceCardText">
         <h4>

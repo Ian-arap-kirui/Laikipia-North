@@ -35,6 +35,12 @@ main {
 main > section {
   scroll-snap-align: start;
 }
+a {
+  transition: var(--transition);
+  color: var(--blackColor);
+  text-decoration: none;
+  outline: 0 !important;
+}
 .h1,
 .h2,
 .h3,

@@ -1,0 +1,14 @@
+.latestNews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5em 0;
+}
+.latestNewsSectionContent {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}

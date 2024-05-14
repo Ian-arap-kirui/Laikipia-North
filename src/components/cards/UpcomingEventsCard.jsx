@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EventImg from "../../assets/business.jpg";
 import "./cards.css";
+import "./cards-cont.css";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 const UpcomingEventsCard = () => {
   return (

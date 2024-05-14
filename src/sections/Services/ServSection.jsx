@@ -55,13 +55,14 @@ const ServSection = () => {
         />
         <div className="servSectionContent">
           <Slider {...settings}>
-            <ServiceCards />
-            <ServiceCards />
-            <ServiceCards />
-            <ServiceCards />
-            <ServiceCards />
-            <ServiceCards />
-            <ServiceCards />
+            <ServiceCards carDFor={"serviceCards"} />
+            <ServiceCards carDFor={"serviceCards"} />
+            <ServiceCards carDFor={"serviceCards"} />
+            <ServiceCards carDFor={"serviceCards"} />
+            <ServiceCards carDFor={"serviceCards"} />
+            <ServiceCards carDFor={"serviceCards"} />
+            <ServiceCards carDFor={"serviceCards"} />
+            <ServiceCards carDFor={"serviceCards"} />
           </Slider>
         </div>
       </div>

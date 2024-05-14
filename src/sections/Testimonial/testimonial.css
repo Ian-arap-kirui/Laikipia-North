@@ -4,9 +4,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5em 0;
   background-color: #f9fbfe;
-  padding: 3em;
+  padding: 1em 0 0 0;
 }
 .counselTestimonialContent {
   width: 100%;
