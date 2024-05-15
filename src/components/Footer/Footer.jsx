@@ -18,7 +18,7 @@ const FooterLinks = [
       {
         id: 1,
         title: "About Us",
-        link: "/about",
+        link: "/about-us",
       },
       {
         id: 2,
@@ -49,7 +49,7 @@ const FooterLinks = [
       {
         id: 1,
         title: "Our Services",
-        link: "/about",
+        link: "/about-us",
       },
     ],
   },

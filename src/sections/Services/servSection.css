@@ -65,3 +65,15 @@
   top: 50%;
   right: 13%;
 }
+.serviceCardContainer {
+  display: flex;
+  width: 75%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 3em 0;
+}
+.serviceCardContainer > div {
+  width: 30%;
+}

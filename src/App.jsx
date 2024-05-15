@@ -4,6 +4,9 @@ import Home from "./pages/Home/Home";
 import Layout from "./components/Layout";
 import { Suspense } from "react";
 import Projects from "./pages/Projects/Projects";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import Services from "./pages/Services/Services";
+import Blogs from "./pages/Blogs/Blogs";
 function App() {
   const router = createBrowserRouter([
     {
@@ -17,8 +20,20 @@ function App() {
           element: <Home />,
         },
         {
+          path: "/about-us",
+          element: <AboutUs />,
+        },
+        {
           path: "/projects",
           element: <Projects />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
+        },
+        {
+          path: "/blogs",
+          element: <Blogs />,
         },
       ],
     },

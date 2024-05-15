@@ -21,6 +21,74 @@
   right: 0;
   filter: brightness(0.2);
 }
+.hero2Section {
+  height: 30vh;
+  width: 100lvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.hero2Section > img {
+  filter: brightness(0.2);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.hero2SectionText {
+  position: absolute;
+  z-index: 12;
+  color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero2SectionText > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--whiteColor);
+  font-family: var(--fontFamily);
+  margin-bottom: 15px;
+}
+.hero2SectionText > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero2SectionText > ul > li {
+  display: inline-block;
+  margin: 0px 10px 0 0;
+  position: relative;
+  color: var(--mainColor);
+  font-weight: 500;
+  font-size: 15px;
+  font-family: var(--fontFamily);
+}
+.hero2SectionText > ul > li > a {
+  color: var(--whiteColor);
+}
+.hero2SectionText > ul > li::after {
+  content: ">";
+  font-size: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  margin-left: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.hero2SectionText > ul > li:last-child::after {
+  display: none;
+}
+.hero2SectionText > ul > li:last-child {
+  color: var(--mainColor);
+}
 .heroContainer {
   overflow: hidden;
   padding-top: 50px;
