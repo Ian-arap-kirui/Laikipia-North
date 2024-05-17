@@ -2,10 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./whoWeAre.css";
 import { faLandmarkDome } from "@fortawesome/free-solid-svg-icons";
 import weAreImg from "../../assets/heroImg1.jpg";
+import weAreImg1 from "../../assets/animals.jpg";
+import weAreImg2 from "../../assets/artifacts.jpg";
+import weAreImg3 from "../../assets/landscape1.jpg";
 import SectionHeader from "../../components/Headers/SectionHeader";
-const WhoWeAre = ({ title }) => {
+const WhoWeAre = ({ title, page }) => {
   return (
-    <section className="weAre">
+    <section className={"weAre"}>
       {title === "cityEvents" ? (
         <div className="weAreHeader">
           <SectionHeader
@@ -22,13 +25,30 @@ const WhoWeAre = ({ title }) => {
           title === "cityEvents" ? "exploreCity" : ""
         }`}
       >
-        <div className="weAreLeft">
-          <img src={weAreImg} alt="image" loading="lazy" />
-        </div>
+        {page === "home" ? (
+          <div className="weAreLeft">
+            <img src={weAreImg} alt="image" loading="lazy" />
+          </div>
+        ) : page === "aboutUs" ? (
+          <div
+            className={`weAreLeft ${page === "aboutUs" ? "aboutUsLeft" : ""}`}
+          >
+            <img src={weAreImg1} alt="" loading="lazy" />
+            <img src={weAreImg3} alt="" loading="lazy" />
+            <img src={weAreImg2} alt="" loading="lazy" />
+          </div>
+        ) : null}
+
         <div className="weAreRight ">
           <div
             className={`weAreText ${
-              title === "cityEvents" ? "exploreCityText" : ""
+              title === "cityEvents" && page === "aboutUs"
+                ? "exploreCityAboutUsText"
+                : title === "cityEvents"
+                ? "exploreCityText"
+                : page === "aboutUs"
+                ? "aboutUsText"
+                : ""
             }`}
           >
             <div className="weAreTitle">

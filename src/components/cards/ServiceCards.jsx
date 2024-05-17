@@ -4,9 +4,11 @@ import servImg from "../../assets/business.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-const ServiceCards = ({ carDFor }) => {
+const ServiceCards = ({ carDFor, page }) => {
   return (
-    <div className="serviceCard">
+    <div
+      className={` ${page === "aboutUs" ? "aboutUsServCard" : "serviceCard"}`}
+    >
       <div className="serviceCardImgCont">
         <Link to={"/"}>
           <img src={servImg} alt="" className="serviceCardImg" loading="lazy" />

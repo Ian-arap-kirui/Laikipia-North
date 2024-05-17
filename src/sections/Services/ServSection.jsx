@@ -7,7 +7,7 @@ import {
   faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons";
 import SectionHeader from "../../components/Headers/SectionHeader";
-const ServSection = () => {
+const ServSection = ({ page }) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -45,25 +45,50 @@ const ServSection = () => {
     ],
   };
   return (
-    <section className="servSection">
-      <div className="servSectionContainer">
+    <section
+      className={`${page === "aboutUs" ? "aboutUsServSection" : "servSection"}`}
+    >
+      <div
+        className={
+          page === "aboutUs"
+            ? "aboutUsServSectionContainer"
+            : "servSectionContainer"
+        }
+      >
         <SectionHeader
           title={"Find Governmental Services"}
           subtitle={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
           }
         />
-        <div className="servSectionContent">
-          <Slider {...settings}>
-            <ServiceCards carDFor={"serviceCards"} />
-            <ServiceCards carDFor={"serviceCards"} />
-            <ServiceCards carDFor={"serviceCards"} />
-            <ServiceCards carDFor={"serviceCards"} />
-            <ServiceCards carDFor={"serviceCards"} />
-            <ServiceCards carDFor={"serviceCards"} />
-            <ServiceCards carDFor={"serviceCards"} />
-            <ServiceCards carDFor={"serviceCards"} />
-          </Slider>
+        <div
+          className={
+            page === "aboutUs"
+              ? "aboutUsServSectionContent"
+              : "servSectionContent"
+          }
+        >
+          {page === "aboutUs" ? (
+            <>
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+            </>
+          ) : (
+            <Slider {...settings}>
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+              <ServiceCards carDFor={"serviceCards"} page={page} />
+            </Slider>
+          )}
         </div>
       </div>
     </section>

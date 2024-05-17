@@ -1,14 +1,14 @@
 import FunFactsCard from "../../components/cards/FunFactsCard";
 import "./funFacts.css";
 
-const FunFacts = () => {
+const FunFacts = ({ page }) => {
   return (
-    <section className="funFacts">
+    <section className={page === "aboutUs" ? "aboutUsFunFacts" : "funFacts"}>
       <div className="funFactsWrapper">
-        <FunFactsCard />
-        <FunFactsCard />
-        <FunFactsCard />
-        <FunFactsCard />
+        <FunFactsCard page={page} />
+        <FunFactsCard page={page} />
+        <FunFactsCard page={page} />
+        <FunFactsCard page={page} />
       </div>
     </section>
   );

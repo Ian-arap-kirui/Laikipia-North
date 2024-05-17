@@ -10,6 +10,18 @@
   background-repeat: no-repeat;
   background-image: url("../../assets/funfactsbg.jpg");
 }
+
+.aboutUsFunFacts {
+  background-color: var(--whiteColor);
+  background-image: none;
+  width: 100lvw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .funFacts::before {
   content: "";
   width: 100%;

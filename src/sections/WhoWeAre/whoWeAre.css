@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .weAreContainer {
   margin-top: 60px;
   width: 70%;
@@ -15,6 +16,7 @@
   margin-bottom: 4em;
 }
 .weAreHeader {
+  margin: 3em 0 0 0;
   max-width: 720px;
   text-align: center;
   margin-left: auto;
@@ -31,6 +33,32 @@
 }
 .weAreHeader > p {
   margin-top: 14px;
+}
+.aboutUsLeft {
+  width: 50%;
+  position: relative;
+  margin-left: 20px;
+  height: 600px;
+}
+.aboutUsLeft > img:nth-child(1) {
+  max-width: 55%;
+  height: 350px;
+}
+.aboutUsLeft > img:nth-child(2) {
+  position: absolute;
+  height: 350px;
+  max-width: 55%;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+.aboutUsLeft > img:nth-child(3) {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
 }
 .weAreLeft {
   width: 50%;
@@ -53,6 +81,14 @@
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: -100px;
+}
+.aboutUsText {
+  margin-left: 0;
+}
+
+.exploreCityAboutUsText {
+  margin-right: 0; /* Reset margin-right */
+  margin-left: 0; /* Assuming you want to reset margin-left as well */
 }
 .weAreTitle > span {
   color: var(--mainColor);

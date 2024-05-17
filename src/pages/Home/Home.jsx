@@ -13,10 +13,10 @@ const Home = () => {
     <>
       <Hero page={"home"} />
       <ServSection />
-      <WhoWeAre title="whoWeAre" />
-      <FunFacts />
+      <WhoWeAre title="whoWeAre" page={"home"} />
+      <FunFacts page={"home"} />
       <UpcomingEvents />
-      <WhoWeAre title="cityEvents" />
+      <WhoWeAre title="cityEvents" page={"home"} />
       <CounselTestimonial />
       <Counselors />
       <Process />

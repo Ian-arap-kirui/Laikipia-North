@@ -1,14 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./cards.css";
 import "./cards-cont.css";
-import { faCity, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
-const FunFactsCard = () => {
+import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+const FunFactsCard = ({ page }) => {
   return (
-    <div className="funFactsCard">
-      <div className="funFactsIcon">
+    <div
+      className={page === "aboutUs" ? "aboutUsFunFactsCard" : "funFactsCard"}
+    >
+      <div
+        className={page === "aboutUs" ? "aboutUsFunFactsIcon" : "funFactsIcon"}
+      >
         <FontAwesomeIcon icon={faPeopleGroup} />
       </div>
-      <div className="funFactsText">
+      <div
+        className={page === "aboutUs" ? "aboutUsFunFactsText" : "funFactsText"}
+      >
         <h2>42,459</h2>
         <p>Population</p>
       </div>
