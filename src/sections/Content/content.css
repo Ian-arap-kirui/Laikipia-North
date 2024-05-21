@@ -1,0 +1,27 @@
+.contentContainer {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  gap: 2em;
+}
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}

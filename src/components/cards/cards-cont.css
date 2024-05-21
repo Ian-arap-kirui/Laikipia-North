@@ -204,3 +204,59 @@
   color: var(--whiteColor);
   background-color: var(--mainColor);
 }
+/* projects card */
+
+.projectCard {
+  margin-top: 30px;
+  position: relative;
+}
+.projectCard::before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.projectCard:hover::before {
+  height: 100%;
+}
+.projectCardText {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding: 0px 25px 25px 0px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.projectCard:hover .projectCardText {
+  opacity: 1;
+  padding-left: 25px;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.projectCardText > span {
+  color: var(--mainColor);
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+.projectCardText > h5 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.projectCardText > h5 > a {
+  color: var(--whiteColor);
+}
+.projectCardText > h5 > a:hover {
+  color: var(--mainColor);
+}
