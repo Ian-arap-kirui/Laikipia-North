@@ -49,14 +49,78 @@
   display: flex;
   justify-content: space-between;
 }
+
+.navRight {
+  width: 57%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
 .links {
   display: flex;
   width: 60%;
   justify-content: space-around;
 }
-.links > a {
+
+.link-item {
+  position: relative;
+}
+
+.links > .link-item > a {
   padding: 0;
-  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+  margin-left: 14px;
+  margin-right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.links > .link-item > a.active {
+  color: var(--mainColor);
+  transition: 0.5s;
+}
+
+.subLinks {
+  left: 0;
+  top: 60px;
+  opacity: 0;
+  z-index: 99;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0;
+  visibility: hidden;
+  position: absolute;
+  transform: rotateX(-20deg);
+  transform-origin: top;
+  background: var(--whiteColor);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+}
+.subItem {
+  position: relative;
+  padding: 0;
+}
+
+.subItemLink {
+  display: block;
+  padding: 7px 20px;
+  color: var(--blackColor);
+  border-bottom: 1px dashed transparent;
+  font-size: 15px;
+  font-weight: 400;
   transition: 0.5s;
   position: relative;
   color: var(--blackColor);
@@ -65,26 +129,30 @@
   font-family: var(--fontFamily);
   margin-left: 14px;
   margin-right: 14px;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  text-decoration: none;
 }
-.links > a.active {
+.subItemLink:hover {
   color: var(--mainColor);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.navRight {
-  width: 57%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 30px;
+.subItemLink::before {
+  content: " \f054 ";
+  font-size: 0;
+  font-weight: 600;
+  color: var(--mainColor);
+  transition: 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 99;
 }
-.linkName {
+.subItemLink:hover::before {
+  font-size: 15px;
+}
+.link-item:hover .subLinks {
+  opacity: 1;
+  transform: rotateX(0deg);
+  visibility: visible;
 }
 
 @keyframes fadeInDown {

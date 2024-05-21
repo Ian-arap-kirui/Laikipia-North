@@ -1,6 +1,7 @@
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "./nav.css";
 
 const Links = [
   {
@@ -22,22 +23,47 @@ const Links = [
     id: 3,
     title: "Projects",
     link: "/projects",
+    listItems: [
+      { item: "Project 1", link: "/projects/1" },
+      { item: "Project 2", link: "/projects/2" },
+      { item: "Project 3", link: "/projects/3" },
+    ],
   },
   {
     id: 4,
     title: "Services",
     link: "/services",
+    listItems: [
+      { item: "Service 1", link: "/services/1" },
+      { item: "Service 2", link: "/services/2" },
+      { item: "Service 3", link: "/services/3" },
+    ],
   },
 ];
+
 const NavLinks = () => {
   return (
     <div className="links">
       {Links.map((item) => (
-        <NavLink key={item.id} to={item.link} activeClassName="active">
-          {/* <FontAwesomeIcon  className="linkIcon"/> */}
-          {item.title}
-          <FontAwesomeIcon icon={faChevronDown} className="chevron" />
-        </NavLink>
+        <div key={item.id} className="link-item">
+          <NavLink to={item.link} activeClassName="link active">
+            {item.title}
+            {item.listItems && (
+              <FontAwesomeIcon icon={faChevronDown} className="chevron" />
+            )}
+          </NavLink>
+          {item.listItems && (
+            <ul className="subLinks">
+              {item.listItems.map((subItem, index) => (
+                <li key={index} className="subItem">
+                  <Link to={subItem.link} className="subItemLink">
+                    {subItem.item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       ))}
     </div>
   );
