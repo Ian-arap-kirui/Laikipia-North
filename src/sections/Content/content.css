@@ -7,17 +7,81 @@
 .left {
   width: 70%;
 }
-
+.blogImageContainer {
+  margin: 1em 0 0 0;
+}
+.blogImageContainer > h2 {
+  padding: 0.5em 0;
+  width: 100%;
+}
+.blogImageContainer > img {
+  width: 100%;
+  height: 30em;
+  object-fit: cover;
+}
 .right {
   width: 30%;
 }
+.blogDetailsTop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 0 1em;
+  gap: 3em;
+}
+.iconsContainer {
+  display: inherit;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ql-video {
+  width: 100%;
+  height: 380px;
+}
+.subSection > h4 {
+  margin: 24px 0;
+}
+.subSection > div > p {
+  font-size: clamp(16px, 1.5vw, 24px);
+  line-height: 1.6;
+  margin: 0.6em 0;
+  color: #666;
+}
+.subSection > div > p > span {
+  font-size: clamp(16px, 1.5vw, 24px);
+  line-height: 1.6;
+  margin: 0.6em 0;
+  color: #666;
+}
 
+.subSection > div > ul {
+  list-style-type: disc;
+  margin: 2em 0 2em 7em;
+}
+.subSection > div > ul > li {
+  font-size: clamp(16px, 1.5vw, 22px);
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: normal;
+}
+.subSection > div > p > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subSection > p > p > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (max-width: 768px) {
   .contentContainer {
     flex-direction: column;
     width: 90%;
   }
-
+  .contentSideBar > div {
+    width: 90%;
+  }
   .left {
     width: 100%;
   }

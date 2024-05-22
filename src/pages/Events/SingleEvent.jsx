@@ -2,14 +2,14 @@ import { useParams } from "react-router-dom";
 import Content from "../../sections/Content/Content";
 import Hero from "../../sections/Hero/Hero";
 
-const SinlgeProject = () => {
-  const { projectId } = useParams();
+const SingleEvent = () => {
+  const { eventTitle } = useParams();
   return (
     <>
-      <Hero page={"Single Project"} />
-      <Content page={"Projects"} />
+      <Hero page={eventTitle} />
+      <Content page={"Events"} />
     </>
   );
 };
 
-export default SinlgeProject;
+export default SingleEvent;

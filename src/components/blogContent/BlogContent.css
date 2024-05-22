@@ -1,0 +1,122 @@
+.contentSideBar {
+  margin: 5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.contentSideBar > div {
+  background: #edf7f5;
+  padding: 2em 1em;
+  width: 100%;
+  padding: 25px;
+  box-shadow: var(--boxShadow);
+  background-color: var(--whiteColor);
+  border-radius: 5px;
+}
+.categs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.details {
+  width: 70%;
+}
+.details > p {
+  font-weight: 700;
+}
+.details > span {
+  text-transform: capitalize;
+}
+.categs > li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.categs > li > a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+.categs > li > a:hover {
+  text-decoration: underline;
+}
+.categs > li > hr {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  margin: 0;
+}
+.recents {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em 0 0;
+}
+.recents > a {
+  text-decoration: none;
+  color: black;
+}
+.recents > a:hover {
+  text-decoration: underline;
+  transition: 1s all ease-in-out;
+}
+.recentPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.recentImgContainer {
+  width: 60%;
+  height: 6.5em;
+}
+.recentImgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.recentImgContainer > img:hover {
+  transform: scale(1.1);
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.tags > li {
+  list-style-type: none;
+  width: 30%;
+}
+.tagBtn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #eee;
+  background-color: var(--whiteColor);
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.tagBtn:hover {
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+}
+.tags > a:hover {
+  text-decoration: underline;
+  transition: 0.6s ease-in-out;
+  border: 2px solid #219d80;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+}

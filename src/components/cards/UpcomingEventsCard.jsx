@@ -3,6 +3,7 @@ import EventImg from "../../assets/business.jpg";
 import "./cards.css";
 import "./cards-cont.css";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const UpcomingEventsCard = () => {
   return (
     <div className="upcomingEventCard">
@@ -19,9 +20,9 @@ const UpcomingEventsCard = () => {
             Laikipia , Kenya{" "}
           </a>
         </p>
-        <a href="/" className="read-more-btn">
+        <Link to="/events/Annual-General-Meeting" className="read-more-btn">
           Read More
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -88,9 +88,14 @@
   transition: 0.5s;
 }
 
+.subItem > a.active {
+  color: var(--mainColor);
+  transition: 0.5s;
+}
+
 .subLinks {
   left: 0;
-  top: 60px;
+  top: 45px;
   opacity: 0;
   z-index: 99;
   width: 200px;
@@ -135,8 +140,9 @@
   transition: 0.5s;
 }
 .subItemLink::before {
-  content: " \f054 ";
+  content: ">";
   font-size: 0;
+  font-family: "FontAwesome";
   font-weight: 600;
   color: var(--mainColor);
   transition: 0.2s ease;

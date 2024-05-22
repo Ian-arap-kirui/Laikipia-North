@@ -39,6 +39,16 @@ const Links = [
       { item: "Service 3", link: "/services/3" },
     ],
   },
+  {
+    id: 5,
+    title: "Events",
+    link: "/events",
+    listItems: [
+      { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
+      { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
+      { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
+    ],
+  },
 ];
 
 const NavLinks = () => {
@@ -56,9 +66,13 @@ const NavLinks = () => {
             <ul className="subLinks">
               {item.listItems.map((subItem, index) => (
                 <li key={index} className="subItem">
-                  <Link to={subItem.link} className="subItemLink">
+                  <NavLink
+                    to={subItem.link}
+                    activeClassName="active"
+                    className="subItemLink"
+                  >
                     {subItem.item}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>

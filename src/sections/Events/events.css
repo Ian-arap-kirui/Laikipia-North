@@ -30,3 +30,18 @@
   font-size: 38px;
   font-weight: 700;
 }
+.eventsList {
+  width: 100lvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eventsListWrapper {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 2em 0;
+}

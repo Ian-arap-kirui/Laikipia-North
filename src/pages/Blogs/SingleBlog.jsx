@@ -7,7 +7,7 @@ const SingleBlog = () => {
   return (
     <>
       <Hero page={"Single Blog"} />
-      <Content />
+      <Content page={"Blogs"} />
     </>
   );
 };

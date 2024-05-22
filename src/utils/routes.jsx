@@ -13,6 +13,7 @@ const ServicesPage = lazyWithDelay(
   () => import("../pages/Services/Services"),
   2400
 );
+const EventsPage = lazyWithDelay(() => import("../pages/Events/Events"), 2400);
 const BlogsPage = lazyWithDelay(() => import("../pages/Blogs/Blogs"), 2000);
 const SingleServicePage = lazyWithDelay(
   () => import("../pages/Services/SingleService"),
@@ -24,6 +25,10 @@ const SingleProjectPage = lazyWithDelay(
 );
 const SingleBlogPage = lazyWithDelay(
   () => import("../pages/Blogs/SingleBlog"),
+  2000
+);
+const SingleEventPage = lazyWithDelay(
+  () => import("../pages/Events/SingleEvent"),
   2000
 );
 
@@ -45,6 +50,10 @@ const routes = [
     element: <ServicesPage />,
   },
   {
+    path: "/events",
+    element: <EventsPage />,
+  },
+  {
     path: "/blogs",
     element: <BlogsPage />,
   },
@@ -59,6 +68,10 @@ const routes = [
   {
     path: "/blogs/:blogId",
     element: <SingleBlogPage />,
+  },
+  {
+    path: "/events/:eventTitle",
+    element: <SingleEventPage />,
   },
 ];
 
