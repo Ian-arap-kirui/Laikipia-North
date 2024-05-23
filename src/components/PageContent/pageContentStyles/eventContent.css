@@ -26,6 +26,11 @@
   flex-direction: column;
   gap: 12px;
 }
+.eventContentText > h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
 .eventContentInfo {
   width: 30%;
 }
@@ -41,9 +46,10 @@
 .eventContentCard > h3 {
   font-size: var(--card-title-fontSize);
   font-weight: 600;
+  margin-bottom: 9px;
 }
 .eventContentCard > p {
-  margin-bottom: 9px;
+  margin-bottom: 18px;
 }
 .eventInfoCard {
   display: flex;
