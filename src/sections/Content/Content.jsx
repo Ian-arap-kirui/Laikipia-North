@@ -1,23 +1,29 @@
+import EventsContent from "../../components/PageContent/EventsContent";
+import ProjectsContent from "../../components/PageContent/ProjectsContent";
+import ServiceContent from "../../components/PageContent/ServiceContent";
+import EventsSidebar from "../../components/SideBar/EventsSidebar";
 import BlogContent from "../../components/blogContent/BlogContent";
 import SideBar from "../../components/blogContent/SideBar";
 import "./content.css";
 const Content = ({ page }) => {
   return (
     <div className="contentContainer">
-      <section className="left">
+      <section className={page === "Events" ? "eventsLeft" : "left"}>
         {page === "Blogs" ? (
           <BlogContent />
         ) : page === "Projects" ? (
-          <>project content</>
+          <ProjectsContent />
         ) : page === "Services" ? (
-          <>service content</>
+          <ServiceContent />
         ) : page === "Events" ? (
-          <>Events content</>
+          <EventsContent />
         ) : null}
       </section>
-      <section className="right">
-        <SideBar />
-      </section>
+      {page === "Events" ? null : (
+        <section className="right">
+          <SideBar />
+        </section>
+      )}
     </div>
   );
 };

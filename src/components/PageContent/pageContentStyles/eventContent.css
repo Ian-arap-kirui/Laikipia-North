@@ -1,0 +1,72 @@
+.eventContentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.eventImgContainer {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.eventImgContainer > img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.eventContentDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.eventContentText {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.eventContentInfo {
+  width: 30%;
+}
+.eventContentCard {
+  padding: 25px;
+  box-shadow: var(--boxShadow);
+  background-color: var(--whiteColor);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.eventContentCard > h3 {
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+.eventContentCard > p {
+  margin-bottom: 9px;
+}
+.eventInfoCard {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+.eventInfoCard > svg {
+  color: var(--mainColor);
+  font-size: 25px;
+}
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.eventInfo > h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.eventInfo > span {
+  color: var(--paragraphColor);
+  font-size: 15px;
+  font-family: var(--fontFamily2);
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./BlogContent.css";
 import { Link } from "react-router-dom";
+import dummyImg from "../../assets/heroImg.jpg";
 
 const SideBar = () => {
   // Extract categories and popular tags from the data
@@ -36,7 +37,25 @@ const SideBar = () => {
         <div className="recents">
           <Link to={`/blogs/3`} className="recentPost">
             <div className="recentImgContainer">
-              <img src={""} alt="post-image" loading="lazy" />
+              <img src={dummyImg} alt="post-image" loading="lazy" />
+            </div>
+            <div className="details">
+              <h6>description</h6>
+              <span>category</span>
+            </div>
+          </Link>
+          <Link to={`/blogs/3`} className="recentPost">
+            <div className="recentImgContainer">
+              <img src={dummyImg} alt="post-image" loading="lazy" />
+            </div>
+            <div className="details">
+              <h6>description</h6>
+              <span>category</span>
+            </div>
+          </Link>
+          <Link to={`/blogs/3`} className="recentPost">
+            <div className="recentImgContainer">
+              <img src={dummyImg} alt="post-image" loading="lazy" />
             </div>
             <div className="details">
               <h6>description</h6>
