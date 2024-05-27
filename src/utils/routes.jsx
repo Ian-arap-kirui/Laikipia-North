@@ -1,4 +1,6 @@
+import React from "react";
 import lazyWithDelay from "./lazyWithDelay";
+import { constituencyData } from "../utils/data"; // Update with the correct path
 
 const HomePage = lazyWithDelay(() => import("../pages/Home/Home"), 3500);
 const AboutUsPage = lazyWithDelay(
@@ -35,19 +37,19 @@ const SingleEventPage = lazyWithDelay(
 const routes = [
   {
     path: "/",
-    element: <HomePage />,
+    element: <HomePage data={constituencyData} />,
   },
   {
     path: "/about-us",
-    element: <AboutUsPage />,
+    element: <AboutUsPage data={constituencyData} />,
   },
   {
     path: "/projects",
-    element: <ProjectsPage />,
+    element: <ProjectsPage projects={constituencyData[0].projects} />,
   },
   {
     path: "/services",
-    element: <ServicesPage />,
+    element: <ServicesPage services={constituencyData[0].services} />,
   },
   {
     path: "/events",
@@ -59,11 +61,11 @@ const routes = [
   },
   {
     path: "/services/:serviceId",
-    element: <SingleServicePage />,
+    element: <SingleServicePage services={constituencyData[0].services} />,
   },
   {
     path: "/projects/:projectId",
-    element: <SingleProjectPage />,
+    element: <SingleProjectPage projects={constituencyData[0].projects} />,
   },
   {
     path: "/blogs/:blogId",

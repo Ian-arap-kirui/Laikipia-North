@@ -1,16 +1,17 @@
 import ServiceCards from "../../components/cards/ServiceCards";
 import "./servSection.css";
-const ServiceCardContainer = ({ page }) => {
+const ServiceCardContainer = ({ page, services }) => {
   return (
     <section className="serviceCardContainer">
       {page === "Our Services" ? (
         <>
-          <ServiceCards carDFor={"serviceCards"} />
-          <ServiceCards carDFor={"serviceCards"} />
-          <ServiceCards carDFor={"serviceCards"} />
-          <ServiceCards carDFor={"serviceCards"} />
-          <ServiceCards carDFor={"serviceCards"} />
-          <ServiceCards carDFor={"serviceCards"} />
+          {services.map((item) => (
+            <ServiceCards
+              carDFor={"serviceCards"}
+              service={item}
+              key={item.id}
+            />
+          ))}
         </>
       ) : (
         <>

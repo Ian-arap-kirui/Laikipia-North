@@ -19,10 +19,18 @@ const eventDetails = [
     title: "Event Location:",
     value: "18 Quiet Valley Lane, USA",
   },
-  { icon: faDollarSign, title: "Event Cost:", value: "$160" },
-  { icon: faPhone, title: "Phone Number:", value: "+02 123 456 7894" },
-  { icon: faEnvelope, title: "Email Address:", value: "support@medzu.com" },
-  { icon: faGlobe, title: "Website:", value: "medzu.com" },
+  { icon: faDollarSign, title: "Event Cost:", value: "members only" },
+  { icon: faPhone, title: "Phone Number:", value: "+254 123 456 78" },
+  {
+    icon: faEnvelope,
+    title: "Email Address:",
+    value: "support@laikipiaNorthConstituency.go.ke",
+  },
+  {
+    icon: faGlobe,
+    title: "Website:",
+    value: "laikipianorthconstituency.go.ke",
+  },
 ];
 const EventsContent = () => {
   return (

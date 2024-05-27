@@ -31,7 +31,9 @@ const Hero = ({ page }) => {
                     neque aliquet ve, dapibus id dolor sit amet magna aliqu
                     amet.
                   </p>
-                  <button className="primaryButton">Learn More</button>
+                  <Link to={"/about-us"} className="primaryButton">
+                    Learn More
+                  </Link>
                 </div>
                 <div className="heroRight">
                   <img src={heroImg} alt="banner image" loading="lazy" />

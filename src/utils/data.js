@@ -1,4 +1,4 @@
-const constituencyData = [
+export const constituencyData = [
   {
     title: "Laikipia North Constituency",
     motto: "",
@@ -225,8 +225,205 @@ const constituencyData = [
             year: "2020-2021",
             img: "",
           },
+          {
+            id: 1,
+            name: "Mbogo-ini Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 2,
+            name: "Mukima Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 3,
+            name: "Uaso Nyiro Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 4,
+            name: "Lekiji Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 5,
+            name: "Sanga Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 6,
+            name: "Ngenia Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 7,
+            name: "Jikaze Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 8,
+            name: "Olokirisia Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 9,
+            name: "Olotasha Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 10,
+            name: "Ilpolei Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 11,
+            name: "Morijo Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 12,
+            name: "Maraibene Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 13,
+            name: "Soitostate Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
+          {
+            id: 14,
+            name: "Nkiloriti Primary School",
+            description: "Construction of one (1) Classroom to completion",
+            cost: "Ksh. 950000",
+            status: "Complete",
+            year: "2020-2021",
+            img: "",
+          },
         ],
-        proposals: [{}],
+
+        proposals: [
+          {
+            id: 0,
+            filename: "2021-2022 Project Proposal",
+            status: "Approved",
+            upload_date: "April 17, 2023",
+            action: () => {
+              window.location.href = "path/to/2021-2022-Project-Proposal.pdf";
+            },
+          },
+          {
+            id: 1,
+            filename: "Laikipia North Financial Year: 2020-2021",
+            status: "Approved",
+            upload_date: "September 8, 2021",
+            action: () => {
+              window.location.href =
+                "path/to/Laikipia-North-Financial-Year-2020-2021.pdf";
+            },
+          },
+          {
+            id: 2,
+            filename: "Laikipia North Financial Year: 2019-2020",
+            status: "Approved",
+            upload_date: "September 8, 2021",
+            action: () => {
+              window.location.href =
+                "path/to/Laikipia-North-Financial-Year-2019-2020.pdf";
+            },
+          },
+          {
+            id: 3,
+            filename: "Laikipia North Financial Year: 2018-2019",
+            status: "Approved",
+            upload_date: "September 8, 2021",
+            action: () => {
+              window.location.href =
+                "path/to/Laikipia-North-Financial-Year-2018-2019.pdf";
+            },
+          },
+          {
+            id: 4,
+            filename: "Laikipia North Financial Year: 2017-2018",
+            status: "Approved",
+            upload_date: "September 8, 2021",
+            action: () => {
+              window.location.href =
+                "path/to/Laikipia-North-Financial-Year-2017-2018.pdf";
+            },
+          },
+          {
+            id: 5,
+            filename: "Laikipia North Financial Year: 2016-2017",
+            status: "Approved",
+            upload_date: "September 8, 2021",
+            action: () => {
+              window.location.href =
+                "path/to/Laikipia-North-Financial-Year-2016-2017.pdf";
+            },
+          },
+          {
+            id: 6,
+            filename: "Laikipia North Financial Year: 2015-2016",
+            status: "Approved",
+            upload_date: "September 8, 2021",
+            action: () => {
+              window.location.href =
+                "path/to/Laikipia-North-Financial-Year-2015-2016.pdf";
+            },
+          },
+        ],
       },
     ],
   },
