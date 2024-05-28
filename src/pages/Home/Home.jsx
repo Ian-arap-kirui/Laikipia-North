@@ -8,11 +8,11 @@ import ServSection from "../../sections/Services/ServSection";
 import CounselTestimonial from "../../sections/Testimonial/CounselTestimonial";
 import WhoWeAre from "../../sections/WhoWeAre/WhoWeAre";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <>
       <Hero page={"home"} />
-      <ServSection />
+      <ServSection services={data[0].services} page={"home"} />
       <WhoWeAre title="whoWeAre" page={"home"} />
       <FunFacts page={"home"} />
       <UpcomingEvents />

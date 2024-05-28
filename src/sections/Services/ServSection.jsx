@@ -7,7 +7,7 @@ import {
   faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons";
 import SectionHeader from "../../components/Headers/SectionHeader";
-const ServSection = ({ page }) => {
+const ServSection = ({ page, services }) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -72,24 +72,28 @@ const ServSection = ({ page }) => {
         >
           {page === "aboutUs" ? (
             <>
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
+              {services?.map((item) => (
+                <ServiceCards
+                  carDFor={"serviceCards"}
+                  service={item}
+                  key={item.id}
+                  page={page}
+                />
+              ))}
             </>
           ) : (
-            <Slider {...settings}>
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-              <ServiceCards carDFor={"serviceCards"} page={page} />
-            </Slider>
+            <>
+              {services?.map((item) => (
+                // <Slider {...settings}>
+                <ServiceCards
+                  carDFor={"serviceCards"}
+                  service={item}
+                  key={item.id}
+                  page={page}
+                />
+                // </Slider>
+              ))}
+            </>
           )}
         </div>
       </div>

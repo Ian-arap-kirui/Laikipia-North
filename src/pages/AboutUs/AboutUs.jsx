@@ -5,13 +5,13 @@ import Hero from "../../sections/Hero/Hero";
 import ServSection from "../../sections/Services/ServSection";
 import CounselTestimonial from "../../sections/Testimonial/CounselTestimonial";
 import WhoWeAre from "../../sections/WhoWeAre/WhoWeAre";
-const AboutUs = () => {
+const AboutUs = ({ data }) => {
   return (
     <>
       <Hero page={"About Us"} />
       <WhoWeAre title="whoWeAre" page={"aboutUs"} />
       <FunFacts page={"aboutUs"} />
-      <ServSection page={"aboutUs"} />
+      <ServSection page={"aboutUs"} services={data[0].services} />
       <WhoWeAre title="cityEvents" page={"aboutUs"} />
       <Counselors />
     </>

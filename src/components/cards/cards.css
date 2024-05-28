@@ -3,6 +3,8 @@
   box-shadow: var(--boxShadow);
   margin: 30px 0;
   position: relative;
+  /* temporary fix for cards */
+  width: 25em;
 }
 .aboutUsServCard {
   box-shadow: var(--boxShadow);

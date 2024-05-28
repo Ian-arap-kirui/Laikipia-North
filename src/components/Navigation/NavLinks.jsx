@@ -33,11 +33,7 @@ const Links = [
     id: 4,
     title: "Services",
     link: "/services",
-    listItems: [
-      { item: "Service 1", link: "/services/1" },
-      { item: "Service 2", link: "/services/2" },
-      { item: "Service 3", link: "/services/3" },
-    ],
+    listItems: [{ item: "NGCDF", link: "/services/NGCDF" }],
   },
   {
     id: 5,
