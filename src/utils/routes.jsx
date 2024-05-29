@@ -7,6 +7,7 @@ const AboutUsPage = lazyWithDelay(
   () => import("../pages/AboutUs/AboutUs"),
   3000
 );
+const WardsPage = lazyWithDelay(() => import("../pages/Wards/Wards"), 3000);
 const ProjectsPage = lazyWithDelay(
   () => import("../pages/Projects/Projects"),
   2700
@@ -34,6 +35,27 @@ const SingleEventPage = lazyWithDelay(
   2000
 );
 
+const ServiceAllocationsPage = lazyWithDelay(
+  () => import("../pages/Services/ServiceAllocations"),
+  1500
+);
+const ServiceProjectsPage = lazyWithDelay(
+  () => import("../pages/Services/ServiceProjects"),
+  1500
+);
+const ServiceDisbursmentsPage = lazyWithDelay(
+  () => import("../pages/Services/ServiceDisbursments"),
+  1500
+);
+const ServiceProposalsPage = lazyWithDelay(
+  () => import("../pages/Services/ServiceProposals"),
+  1500
+);
+const ServiceMembersPage = lazyWithDelay(
+  () => import("../pages/Services/ServiceMembers"),
+  1500
+);
+
 const routes = [
   {
     path: "/",
@@ -42,6 +64,10 @@ const routes = [
   {
     path: "/about-us",
     element: <AboutUsPage data={constituencyData} />,
+  },
+  {
+    path: "/wards",
+    element: <WardsPage />,
   },
   {
     path: "/projects",
@@ -62,6 +88,28 @@ const routes = [
   {
     path: "/services/:serviceId",
     element: <SingleServicePage services={constituencyData[0].services} />,
+    children: [
+      {
+        path: "allocations",
+        element: <ServiceAllocationsPage />,
+      },
+      {
+        path: "projects",
+        element: <ServiceProjectsPage />,
+      },
+      {
+        path: "disbursments",
+        element: <ServiceDisbursmentsPage />,
+      },
+      {
+        path: "proposals",
+        element: <ServiceProposalsPage />,
+      },
+      {
+        path: "members",
+        element: <ServiceMembersPage />,
+      },
+    ],
   },
   {
     path: "/projects/:projectId",

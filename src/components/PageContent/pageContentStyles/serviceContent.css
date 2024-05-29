@@ -1,0 +1,40 @@
+.serviceContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+.serviceImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.serviceImageContainer > img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+.serviceImageContainer > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.serviceImageContainer > ul > a {
+  padding: 0;
+  transition: 0.5s;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+  margin-left: 14px;
+  margin-right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.serviceImageContainer > ul > a.active {
+  color: var(--mainColor);
+  transition: 0.5s;
+}

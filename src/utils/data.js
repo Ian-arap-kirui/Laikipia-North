@@ -30,6 +30,101 @@ export const constituencyData = [
         value: "Timeliness and Excellence",
       },
     ],
+    wards: [
+      {
+        id: 0,
+        ward: [
+          {
+            id: 0,
+            title: "Mukogodo West Ward",
+            wardList: [
+              {
+                listItem: "County Assembly Ward No.:",
+              },
+              {
+                listItem: " County Assembly Ward Name: Mukogodo West",
+              },
+              {
+                listItem: " County Assembly Ward Population (Approx.):",
+              },
+              {
+                listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
+              },
+              {
+                listItem:
+                  " County  Assembly Ward Description: comprises part of",
+              },
+            ],
+          },
+          {
+            id: 1,
+            title: "Mukogodo East Ward",
+            wardList: [
+              {
+                listItem: "County Assembly Ward No.:",
+              },
+              {
+                listItem: " County Assembly Ward Name: Mukogodo East",
+              },
+              {
+                listItem: " County Assembly Ward Population (Approx.):",
+              },
+              {
+                listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
+              },
+              {
+                listItem:
+                  " County  Assembly Ward Description: comprises part of",
+              },
+            ],
+          },
+          {
+            id: 2,
+            title: "Sosian Ward",
+            wardList: [
+              {
+                listItem: "County Assembly Ward No.:",
+              },
+              {
+                listItem: " County Assembly Ward Name: Sosian",
+              },
+              {
+                listItem: " County Assembly Ward Population (Approx.):",
+              },
+              {
+                listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
+              },
+              {
+                listItem:
+                  " County  Assembly Ward Description: comprises part of",
+              },
+            ],
+          },
+          {
+            id: 3,
+            title: "Segera Ward",
+            wardList: [
+              {
+                listItem: "County Assembly Ward No.:",
+              },
+              {
+                listItem: " County Assembly Ward Name: Segera",
+              },
+              {
+                listItem: " County Assembly Ward Population (Approx.):",
+              },
+              {
+                listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
+              },
+              {
+                listItem:
+                  " County  Assembly Ward Description: comprises part of",
+              },
+            ],
+          },
+        ],
+      },
+    ],
     projects: [{}],
     services: [
       {
@@ -37,6 +132,43 @@ export const constituencyData = [
         title: "NGCDF",
         description:
           "Laikipia North is an electoral constituency in Kenya. It is one of three constituencies of Laikipia County. The constituency was established for the 2013 elections. It is among the ASAL counties in Kenya. The constituency lies in an area of ApproximatelySq. Km 2,295.50 and its population is approximately 81,094 The Member of Parliament for this constituency is, Honorable Sarah Lekorere.",
+        members: [
+          {
+            name: "Charles Kimotho Ndungu",
+            designation: "Male Youth Representative",
+            profile: "",
+          },
+          {
+            name: "Naundoi Lomoni Rukinyi",
+            designation: "Male Adult Representative",
+            profile: "",
+          },
+          {
+            name: "Julia Nyambura Wachira",
+            designation: "Female Youth Representative",
+            profile: "",
+          },
+          {
+            name: "Maria Adeket Iyanai",
+            designation: "Female Adult Representative",
+            profile: "",
+          },
+          {
+            name: "Dickson Makin Leshepa",
+            designation: "Representative of Persons Living with Disability",
+            profile: "",
+          },
+          {
+            name: "Daniel Kimalel Matunge",
+            designation: "Nominee of the Constituency Office (Male)",
+            profile: "",
+          },
+          {
+            name: "Julia Cheporwas Lochingamoi",
+            designation: "Nominee of the Constituency Office (Female)",
+            profile: "",
+          },
+        ],
         allocations: [
           { year: "2023/2024", amount: "166,593,720.00" },
           { year: "2022/2023", amount: "138,215,033.00" },
@@ -118,101 +250,6 @@ export const constituencyData = [
           { year: "2014/2015", amount: "20,548,206.80", date: "Jun 22, 2015" },
           { year: "2014/2015", amount: "11,539,283.00", date: "Feb 5, 2015" },
           { year: "2014/2015", amount: "14,808,924.20", date: "Dec 23, 2014" },
-        ],
-        countyWards: [
-          {
-            id: 0,
-            ward: [
-              {
-                id: 0,
-                title: "Mukogodo West Ward",
-                wardList: [
-                  {
-                    listItem: "County Assembly Ward No.:",
-                  },
-                  {
-                    listItem: " County Assembly Ward Name: Mukogodo West",
-                  },
-                  {
-                    listItem: " County Assembly Ward Population (Approx.):",
-                  },
-                  {
-                    listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
-                  },
-                  {
-                    listItem:
-                      " County  Assembly Ward Description: comprises part of",
-                  },
-                ],
-              },
-              {
-                id: 1,
-                title: "Mukogodo East Ward",
-                wardList: [
-                  {
-                    listItem: "County Assembly Ward No.:",
-                  },
-                  {
-                    listItem: " County Assembly Ward Name: Mukogodo East",
-                  },
-                  {
-                    listItem: " County Assembly Ward Population (Approx.):",
-                  },
-                  {
-                    listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
-                  },
-                  {
-                    listItem:
-                      " County  Assembly Ward Description: comprises part of",
-                  },
-                ],
-              },
-              {
-                id: 2,
-                title: "Sosian Ward",
-                wardList: [
-                  {
-                    listItem: "County Assembly Ward No.:",
-                  },
-                  {
-                    listItem: " County Assembly Ward Name: Sosian",
-                  },
-                  {
-                    listItem: " County Assembly Ward Population (Approx.):",
-                  },
-                  {
-                    listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
-                  },
-                  {
-                    listItem:
-                      " County  Assembly Ward Description: comprises part of",
-                  },
-                ],
-              },
-              {
-                id: 3,
-                title: "Segera Ward",
-                wardList: [
-                  {
-                    listItem: "County Assembly Ward No.:",
-                  },
-                  {
-                    listItem: " County Assembly Ward Name: Segera",
-                  },
-                  {
-                    listItem: " County Assembly Ward Population (Approx.):",
-                  },
-                  {
-                    listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
-                  },
-                  {
-                    listItem:
-                      " County  Assembly Ward Description: comprises part of",
-                  },
-                ],
-              },
-            ],
-          },
         ],
 
         projects: [

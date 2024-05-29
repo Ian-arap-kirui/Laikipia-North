@@ -13,6 +13,7 @@ const Links = [
     id: 1,
     title: "About Us",
     link: "/about-us",
+    listItems: [{ item: "Wards", link: "wards" }],
   },
   {
     id: 2,
