@@ -1,0 +1,10 @@
+.serviceAllocation {
+  padding: 20px;
+}
+.serviceAllocation > h4 {
+  margin: 1em 0;
+}
+
+.MuiTextField-root {
+  margin-bottom: 20px;
+}

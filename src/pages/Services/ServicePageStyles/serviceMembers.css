@@ -1,0 +1,14 @@
+.serviceMembersContainer {
+  margin: 2em 0 4em;
+}
+.serviceMembersContainer > h3 {
+  margin-bottom: 1em;
+}
+.memberCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}

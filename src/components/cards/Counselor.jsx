@@ -10,7 +10,7 @@ const Counselor = ({ key, name, designation, image, socialIcons }) => {
         <img src={image} alt="" loading="lazy" />
         <div className="teamSocialIcons">
           <ul>
-            {socialIcons.map((icon, index) => (
+            {socialIcons?.map((icon, index) => (
               <li key={index}>
                 <Link to={"/"} className="teamSocialIcon">
                   <FontAwesomeIcon icon={icon} />

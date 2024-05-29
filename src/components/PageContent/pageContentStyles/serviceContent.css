@@ -9,8 +9,8 @@
   justify-content: space-between;
 }
 .serviceImageContainer > img {
-  width: 140px;
-  height: 140px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
 }
 .serviceImageContainer > ul {
@@ -37,4 +37,5 @@
 .serviceImageContainer > ul > a.active {
   color: var(--mainColor);
   transition: 0.5s;
+  text-decoration: underline;
 }

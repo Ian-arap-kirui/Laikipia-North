@@ -1,6 +1,12 @@
 import React from "react";
 import lazyWithDelay from "./lazyWithDelay";
 import { constituencyData } from "../utils/data"; // Update with the correct path
+import ServiceMembers from "../pages/Services/ServiceMembers";
+import ServiceProposals from "../pages/Services/ServiceProposals";
+import ServiceDisbursments from "../pages/Services/ServiceDisbursments";
+import ServiceProjects from "../pages/Services/ServiceProjects";
+import ServiceAllocations from "../pages/Services/ServiceAllocations";
+import SingleServiceProject from "../pages/Services/SingleServicePage/SingleServiceProject";
 
 const HomePage = lazyWithDelay(() => import("../pages/Home/Home"), 3500);
 const AboutUsPage = lazyWithDelay(
@@ -91,23 +97,31 @@ const routes = [
     children: [
       {
         path: "allocations",
-        element: <ServiceAllocationsPage />,
+        element: <ServiceAllocations services={constituencyData[0].services} />,
       },
       {
         path: "projects",
-        element: <ServiceProjectsPage />,
+        element: <ServiceProjects services={constituencyData[0].services} />,
+      },
+      {
+        path: "projects/:projectTitle",
+        element: (
+          <SingleServiceProject services={constituencyData[0].services} />
+        ),
       },
       {
         path: "disbursments",
-        element: <ServiceDisbursmentsPage />,
+        element: (
+          <ServiceDisbursments services={constituencyData[0].services} />
+        ),
       },
       {
         path: "proposals",
-        element: <ServiceProposalsPage />,
+        element: <ServiceProposals services={constituencyData[0].services} />,
       },
       {
         path: "members",
-        element: <ServiceMembersPage />,
+        element: <ServiceMembers services={constituencyData[0].services} />,
       },
     ],
   },

@@ -1,3 +1,6 @@
+import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import CDFLOGO from "../assets/cdf-official-logo.png";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 export const constituencyData = [
   {
     title: "Laikipia North Constituency",
@@ -136,37 +139,44 @@ export const constituencyData = [
           {
             name: "Charles Kimotho Ndungu",
             designation: "Male Youth Representative",
-            profile: "",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Naundoi Lomoni Rukinyi",
             designation: "Male Adult Representative",
-            profile: "",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Julia Nyambura Wachira",
             designation: "Female Youth Representative",
-            profile: "",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Maria Adeket Iyanai",
             designation: "Female Adult Representative",
-            profile: "",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Dickson Makin Leshepa",
             designation: "Representative of Persons Living with Disability",
-            profile: "",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Daniel Kimalel Matunge",
             designation: "Nominee of the Constituency Office (Male)",
-            profile: "",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Julia Cheporwas Lochingamoi",
             designation: "Nominee of the Constituency Office (Female)",
-            profile: "",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
           },
         ],
         allocations: [
@@ -260,7 +270,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 1,
@@ -269,7 +279,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 2,
@@ -278,7 +288,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 3,
@@ -287,7 +297,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 4,
@@ -296,7 +306,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 5,
@@ -305,7 +315,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 6,
@@ -314,7 +324,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 7,
@@ -323,7 +333,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 8,
@@ -332,7 +342,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 9,
@@ -341,7 +351,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 10,
@@ -350,7 +360,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 11,
@@ -359,7 +369,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 12,
@@ -368,7 +378,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 13,
@@ -377,7 +387,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
           {
             id: 14,
@@ -386,7 +396,7 @@ export const constituencyData = [
             cost: "Ksh. 950000",
             status: "Complete",
             year: "2020-2021",
-            img: "",
+            img: CDFLOGO,
           },
         ],
 
