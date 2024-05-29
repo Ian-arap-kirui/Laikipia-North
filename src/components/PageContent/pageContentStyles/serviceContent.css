@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 2em 0;
 }
 .serviceImageContainer > img {
   width: 90px;
@@ -38,4 +39,11 @@
   color: var(--mainColor);
   transition: 0.5s;
   text-decoration: underline;
+}
+.serviceDetailsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.serviceDetailsContainer > p {
+  margin: 1em 0 2em;
 }

@@ -1,6 +1,7 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import cdfLogo from "../../assets/cdf-official-logo.png";
 import "./pageContentStyles/serviceContent.css";
+import ServiceDetailsContainer from "../../utils/ServiceDetailsContainer";
 const ServiceContent = ({ service }) => {
   return (
     <div className="serviceContentContainer">
@@ -8,42 +9,41 @@ const ServiceContent = ({ service }) => {
         <img src={cdfLogo} alt="blog-image" loading="lazy" />
         <ul>
           <NavLink
-            activeClassName="active"
+            activeClassname="active"
             to={`/services/${service.title}/allocations`}
           >
             {" "}
             Allocations
           </NavLink>
           <NavLink
-            activeClassName="active"
+            activeClassname="active"
             to={`/services/${service.title}/projects`}
           >
             {" "}
             Projects
           </NavLink>
           <NavLink
-            activeClassName="active"
+            activeClassname="active"
             to={`/services/${service.title}/disbursments`}
           >
             Disbursments
           </NavLink>
           <NavLink
-            activeClassName="active"
+            activeClassname="active"
             to={`/services/${service.title}/proposals`}
           >
             Proposals
           </NavLink>
           <NavLink
-            activeClassName="active"
+            activeClassname="active"
             to={`/services/${service.title}/members`}
           >
             Members
           </NavLink>
         </ul>
       </div>
-      <div className="serviceDetailsContainer">
-        <Outlet />
-      </div>
+      {/* <Outlet /> */}
+      <ServiceDetailsContainer service={service} />
     </div>
   );
 };
