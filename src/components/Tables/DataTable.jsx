@@ -36,7 +36,7 @@ const DataTable = ({ columns, data, slug, title, description }) => {
         },
       ];
 
-  const rowsWithIds = data.map((row, index) => ({
+  const rowsWithIds = data?.map((row, index) => ({
     id: index, // Assigning a unique id based on the index
     ...row,
   }));

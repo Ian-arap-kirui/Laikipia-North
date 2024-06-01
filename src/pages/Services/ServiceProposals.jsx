@@ -13,7 +13,7 @@ const ServiceProposals = ({ services }) => {
       <DataTable
         columns={columns}
         data={proposals}
-        title={"Disbursments"}
+        title={"Proposals"}
         description={"from 2014 to 2024"}
       />
     </div>

@@ -34,7 +34,11 @@ const Links = [
     id: 4,
     title: "Services",
     link: "/services",
-    listItems: [{ item: "NGCDF", link: "/services/NGCDF" }],
+    listItems: [
+      { item: "Constituency Office", link: "/services/Constituency Office" },
+      { item: "Uwezo Fund", link: "/services/Uwezo Fund" },
+      { item: "NGCDF", link: "/services/NGCDF" },
+    ],
   },
   {
     id: 5,
