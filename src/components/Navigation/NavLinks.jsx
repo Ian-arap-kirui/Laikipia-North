@@ -20,18 +20,9 @@ const Links = [
     title: "Blogs",
     link: "/blogs",
   },
+
   {
     id: 3,
-    title: "Projects",
-    link: "/projects",
-    listItems: [
-      { item: "Project 1", link: "/projects/1" },
-      { item: "Project 2", link: "/projects/2" },
-      { item: "Project 3", link: "/projects/3" },
-    ],
-  },
-  {
-    id: 4,
     title: "Services",
     link: "/services",
     listItems: [
@@ -41,7 +32,7 @@ const Links = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "Events",
     link: "/events",
     listItems: [

@@ -14,8 +14,8 @@ body {
   --fontFamily: "Montserrat", sans-serif;
   --fontFamily2: "Roboto", sans-serif;
   background-color: var(--whiteColor);
-  --mainColor: #00aa55;
-  --secondColor: #00aa5530;
+  --mainColor: #007844;
+  --secondColor: #00784430;
   --whiteColor: #ffffff;
   --blackColor: #1f2428;
   --paragraphColor: #666666;
