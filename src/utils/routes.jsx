@@ -7,6 +7,8 @@ import ServiceDisbursments from "../pages/Services/ServiceDisbursments";
 import ServiceProjects from "../pages/Services/ServiceProjects";
 import ServiceAllocations from "../pages/Services/ServiceAllocations";
 import SingleServiceProject from "../pages/Services/SingleServicePage/SingleServiceProject";
+import ServiceEvents from "../pages/Services/ServiceEvents";
+import SingleServiceEvent from "../pages/Services/SingleServicePage/SingleServiceEvent";
 
 const HomePage = lazyWithDelay(() => import("../pages/Home/Home"), 3500);
 const AboutUsPage = lazyWithDelay(
@@ -109,6 +111,15 @@ const routes = [
           <SingleServiceProject services={constituencyData[0].services} />
         ),
       },
+      {
+        path: "events",
+        element: <ServiceEvents services={constituencyData[0].services} />,
+      },
+      {
+        path: "events/:eventTitle",
+        element: <SingleServiceEvent services={constituencyData[0].services} />,
+      },
+
       {
         path: "disbursments",
         element: (

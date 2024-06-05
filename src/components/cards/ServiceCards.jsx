@@ -12,7 +12,7 @@ const ServiceCards = ({ carDFor, page, service }) => {
   const isLatestBlog = carDFor === "latestBlogs";
   const pageTypeClass = page === "aboutUs" ? "aboutUsServCard" : "serviceCard";
   const linkPath =
-    isServiceCard && service ? `/services/${service.title}` : "/blogs/3";
+    isServiceCard && service ? `/services/${service.link}` : "/blogs/3";
   const linkText = isServiceCard && service ? service.title : "BlogTitle";
 
   const renderIcon = () => {

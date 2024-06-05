@@ -1,0 +1,15 @@
+.serviceEvents {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 2em 0;
+}
+.serviceEvents > div {
+  width: 45%;
+}
+.singleServiceEvent > div {
+  width: 100%;
+}

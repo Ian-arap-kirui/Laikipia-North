@@ -7,7 +7,7 @@ const SingleService = ({ services }) => {
 
   // Filter the services array to find the service with the matching id
   const filteredService = services.find(
-    (service) => service.title === serviceId
+    (service) => service.link === serviceId
   );
 
   // Handle the case where no service is found

@@ -64,6 +64,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  gap: 80px;
 }
 .slick-slider {
   width: 70%;
