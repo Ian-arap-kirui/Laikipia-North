@@ -3,7 +3,6 @@ import cdfLogo from "../../assets/cdf-official-logo.png";
 import "./pageContentStyles/serviceContent.css";
 import ServiceDetailsContainer from "../../utils/ServiceDetailsContainer";
 const ServiceContent = ({ service }) => {
-  console.log(service);
   return (
     <div className="serviceContentContainer">
       <div className="serviceImageContainer">

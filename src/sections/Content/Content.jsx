@@ -5,7 +5,7 @@ import EventsSidebar from "../../components/SideBar/EventsSidebar";
 import BlogContent from "../../components/blogContent/BlogContent";
 import SideBar from "../../components/blogContent/SideBar";
 import "./content.css";
-const Content = ({ page, service }) => {
+const Content = ({ page, service, event }) => {
   return (
     <div className="contentContainer">
       <section className={page === "Events" ? "eventsLeft" : "left"}>
@@ -16,7 +16,7 @@ const Content = ({ page, service }) => {
         ) : page === "Services" ? (
           <ServiceContent service={service} />
         ) : page === "Events" ? (
-          <EventsContent />
+          <EventsContent event={event} />
         ) : null}
       </section>
       {page === "Events" ? null : (

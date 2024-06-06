@@ -17,12 +17,6 @@ const Links = [
   },
   {
     id: 2,
-    title: "Blogs",
-    link: "/blogs",
-  },
-
-  {
-    id: 3,
     title: "Services",
     link: "/services",
     listItems: [
@@ -32,15 +26,21 @@ const Links = [
     ],
   },
   {
-    id: 4,
-    title: "Events",
-    link: "/events",
-    listItems: [
-      { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
-      { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
-      { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
-    ],
+    id: 3,
+    title: "Blogs",
+    link: "/blogs",
   },
+
+  // {
+  //   id: 4,
+  //   title: "Events",
+  //   link: "/events",
+  //   listItems: [
+  //     { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
+  //     { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
+  //     { item: "AGM(NGCDF)", link: "/events/Annual-General-Meeting" },
+  //   ],
+  // },
 ];
 
 const NavLinks = () => {
