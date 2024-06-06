@@ -55,8 +55,24 @@
   gap: 20px;
   margin: 2em 0;
 }
-.serviceDetailsContainer > ul > a:hover {
+/* .serviceDetailsContainer > ul > a:hover {
   color: var(--mainColor);
+  transition: 1s all ease-in-out;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+} */
+.serviceDetailsContainer > ul > a {
+  border: 1px solid var(--mainColor);
+  padding: 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 1s all ease-in-out;
+}
+
+.serviceDetailsContainer > ul > a:hover,
+.serviceDetailsContainer > ul > a.active {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
 }
 .servicefilteredProjects {
   display: flex;

@@ -42,7 +42,6 @@ const ServiceDetailsContainer = ({ service }) => {
 
       {isConstituencyOfficeRoute && (
         <div className="serviceDetailsContainer">
-          <h3>{service.title}</h3>
           <h5>The {service.title} deals with:</h5>
           <ul>
             {categories.map((category, index) => (
@@ -50,6 +49,7 @@ const ServiceDetailsContainer = ({ service }) => {
                 to="#"
                 key={index}
                 onClick={() => setSelectedCategory(category)}
+                className={selectedCategory === category ? "active" : ""}
               >
                 {category}
               </Link>
