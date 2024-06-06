@@ -44,6 +44,33 @@
   display: flex;
   flex-direction: column;
 }
+.serviceDetailsContainer > h5 {
+  margin: 1em 0 0;
+}
 .serviceDetailsContainer > p {
   margin: 1em 0 2em;
+}
+.serviceDetailsContainer > ul {
+  display: flex;
+  gap: 20px;
+  margin: 2em 0;
+}
+.serviceDetailsContainer > ul > a:hover {
+  color: var(--mainColor);
+}
+.servicefilteredProjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.servicefilteredProjects > a {
+  width: 30%;
+  box-shadow: var(--boxShadow);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.servicefilteredProjects > a > h4 {
+  color: var(--mainColor);
 }
