@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import UpcomingEventsCard from "../../components/cards/UpcomingEventsCard";
 import Slider from "react-slick";
 import SectionHeader from "../../components/Headers/SectionHeader";
-const UpcomingEvents = () => {
+const UpcomingEvents = ({ services }) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -46,6 +46,19 @@ const UpcomingEvents = () => {
       },
     ],
   };
+
+  // Check if services is provided and is an array
+  if (!Array.isArray(services)) {
+    return <div className="serviceEvents">No events available</div>;
+  }
+
+  // Flatten events from services array
+  const events = services.flatMap((service) => service.events);
+  console.log(services);
+  // Check if events is an array
+  if (!Array.isArray(events) || events.length === 0) {
+    return <div className="serviceEvents">No events available</div>;
+  }
   return (
     <section className="upcomingEvents">
       <div className="eventsHeader">
@@ -57,13 +70,14 @@ const UpcomingEvents = () => {
         />
       </div>
       <div className="eventsContent">
-        <Slider {...settings}>
-          <UpcomingEventsCard />
-          <UpcomingEventsCard />
-          <UpcomingEventsCard />
-          <UpcomingEventsCard />
-          <UpcomingEventsCard />
-        </Slider>
+        {/* <Slider {...settings}> */}
+        {events.map((event) =>
+          // Add conditional rendering to check if event is valid
+          event && event.id ? (
+            <UpcomingEventsCard key={event.id} event={event} />
+          ) : null
+        )}
+        {/* </Slider> */}
       </div>
     </section>
   );

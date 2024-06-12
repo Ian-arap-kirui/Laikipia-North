@@ -8,7 +8,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const UpcomingEventsCard = ({ event }) => {
   const location = useLocation();
-
   if (!event) {
     return null; // or render some fallback UI
   }
@@ -28,12 +27,24 @@ const UpcomingEventsCard = ({ event }) => {
             {event.location || "Location not available"}
           </a>
         </p>
-        <Link
-          to={location.pathname + `/${event.link}`}
-          className="read-more-btn"
-        >
-          Read More
-        </Link>
+        {location.pathname === "/" ? (
+          <>
+            {" "}
+            <Link
+              to={`/services/constituency-office/events/${event.link}`}
+              className="read-more-btn"
+            >
+              Read More
+            </Link>
+          </>
+        ) : location.pathname === "/services/constituency-office/events" ? (
+          <>
+            {" "}
+            <Link to={`${event.link}`} className="read-more-btn">
+              Read More
+            </Link>
+          </>
+        ) : null}
       </div>
     </div>
   );
@@ -45,6 +56,7 @@ UpcomingEventsCard.propTypes = {
     location: PropTypes.string,
     title: PropTypes.string,
     link: PropTypes.string,
+    eventOrganiser: PropTypes.string,
   }).isRequired,
 };
 

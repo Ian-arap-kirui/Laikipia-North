@@ -15,7 +15,7 @@ const Home = ({ data }) => {
       <ServSection services={data[0].services} page={"home"} />
       <WhoWeAre title="whoWeAre" page={"home"} />
       <FunFacts page={"home"} />
-      <UpcomingEvents />
+      <UpcomingEvents services={data[0].services} />
       <WhoWeAre title="cityEvents" page={"home"} />
       <CounselTestimonial />
       <Counselors />

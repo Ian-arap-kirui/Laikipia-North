@@ -7,26 +7,26 @@ import "./counselors.css";
 const Counselors = () => {
   const counselDataProfile = [
     {
+      name: "Honorable Sarah Lekorere",
+      designation: "Member of Parliament",
+      image: DummyProfile,
+      socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
+    },
+    {
       name: "John Doe",
-      designation: "Psychologist",
+      designation: "Fund Manager",
       image: DummyProfile,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     {
       name: "Jane Smith",
-      designation: "Therapist",
+      designation: "Constituency",
       image: DummyProfile,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     {
       name: "Jane Smith",
-      designation: "Therapist",
-      image: DummyProfile,
-      socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
-    },
-    {
-      name: "Jane Smith",
-      designation: "Therapist",
+      designation: "Chairperson (NGDCF)",
       image: DummyProfile,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },

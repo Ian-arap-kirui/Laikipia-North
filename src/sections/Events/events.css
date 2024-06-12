@@ -9,7 +9,8 @@
 .eventsContent {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  gap: 2em;
   justify-content: center;
   align-items: center;
   text-align: center;
