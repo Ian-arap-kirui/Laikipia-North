@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { Outlet, useParams, useLocation, Link } from "react-router-dom";
+import {
+  Outlet,
+  useParams,
+  useLocation,
+  Link,
+  NavLink,
+} from "react-router-dom";
 import "../components/PageContent/pageContentStyles/serviceContent.css";
 
 // Function to extract unique categories
@@ -46,9 +52,12 @@ const ServiceDetailsContainer = ({ service }) => {
           <ul>
             {categories.map((category, index) => (
               <Link
-                to="#"
+                to={"#"} // Set this to the appropriate route
                 key={index}
-                onClick={() => setSelectedCategory(category)}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default anchor behavior
+                  setSelectedCategory(category); // Handle the category selection
+                }}
                 className={selectedCategory === category ? "active" : ""}
               >
                 {category}
