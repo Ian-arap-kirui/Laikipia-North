@@ -1,7 +1,7 @@
 .serviceContentContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 .serviceImageContainer {
   display: flex;

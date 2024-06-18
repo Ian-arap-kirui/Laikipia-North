@@ -17,14 +17,17 @@ const ServiceEvents = ({ services }) => {
   }
 
   return (
-    <div className="serviceEvents">
-      {events.map((event) =>
-        // Add conditional rendering to check if event is valid
-        event && event.id ? (
-          <UpcomingEventsCard key={event.id} event={event} />
-        ) : null
-      )}
-    </div>
+    <>
+      <h5>Events</h5>
+      <div className="serviceEvents">
+        {events.map((event) =>
+          // Add conditional rendering to check if event is valid
+          event && event.id ? (
+            <UpcomingEventsCard key={event.id} event={event} />
+          ) : null
+        )}
+      </div>
+    </>
   );
 };
 

@@ -17,16 +17,19 @@ const getUniqueCategories = (projects) => {
 const ServiceDetailsContainer = ({ service }) => {
   const { serviceId } = useParams();
   const location = useLocation();
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const categories = getUniqueCategories(service.projects);
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const categories = ["All", ...getUniqueCategories(service.projects)];
 
   const isServiceRoute = location.pathname === `/services/${serviceId}`;
   const isConstituencyOfficeRoute =
     location.pathname === `/services/constituency-office`;
 
-  const filteredProjects = selectedCategory
-    ? service.projects.filter((project) => project.categ === selectedCategory)
-    : [];
+  const filteredProjects =
+    selectedCategory === "All"
+      ? service.projects
+      : service.projects.filter(
+          (project) => project.categ === selectedCategory
+        );
 
   return (
     <>

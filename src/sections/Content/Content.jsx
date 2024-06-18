@@ -8,7 +8,15 @@ import "./content.css";
 const Content = ({ page, service, event }) => {
   return (
     <div className="contentContainer">
-      <section className={page === "Events" ? "eventsLeft" : "left"}>
+      <section
+        className={
+          page === "Events"
+            ? "eventsLeft"
+            : page === "Services"
+            ? "serviceLeft"
+            : "left"
+        }
+      >
         {page === "Blogs" ? (
           <BlogContent />
         ) : page === "Projects" ? (
@@ -19,7 +27,7 @@ const Content = ({ page, service, event }) => {
           <EventsContent event={event} />
         ) : null}
       </section>
-      {page === "Events" ? null : (
+      {page === "Services" || "Events" ? null : (
         <section className="right">
           <SideBar />
         </section>
