@@ -126,6 +126,7 @@
   object-fit: cover;
 }
 .heroSocialIcons {
+  display: none;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -205,4 +206,48 @@
 .playIcon:hover {
   background-color: var(--mainColor);
   color: var(--whiteColor);
+}
+@media only screen and (max-width: 767px) {
+  .heroSection {
+    height: 95svh;
+  }
+
+  .heroSection::before {
+    display: none;
+  }
+  .heroContainer {
+    width: 85%;
+  }
+  .heroContent {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .heroLeft {
+    width: 100%;
+  }
+  .heroRight {
+    width: 100%;
+  }
+  .heroLeft > h6,
+  p {
+    font-size: 14px;
+  }
+  .heroLeft > h1 {
+    font-size: 28px;
+  }
+  .heroLeft > p {
+    font-size: 14px;
+    list-style: 1.8;
+    margin-bottom: 15px;
+  }
+  .heroLeft > a {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .heroRight > img {
+    height: 490px;
+  }
+  .heroSocialIcons {
+    display: none;
+  }
 }

@@ -153,3 +153,14 @@
   border: 2px solid var(--mainColor);
   background-color: var(--mainColor);
 }
+@media only screen and (max-width: 767px) {
+  .weAreLeft {
+    display: none;
+  }
+  .weAreContainer {
+    margin: 0;
+  }
+  .weAreRight {
+    width: 97%;
+  }
+}

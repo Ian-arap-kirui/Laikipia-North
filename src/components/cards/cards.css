@@ -5,6 +5,8 @@
   position: relative;
   /* temporary fix for cards */
   width: 25em;
+  display: flex;
+  flex-direction: column;
 }
 .aboutUsServCard {
   box-shadow: var(--boxShadow);
@@ -279,4 +281,35 @@
 .eventsDetails > a {
   text-decoration: none;
   color: var(--whiteColor);
+}
+@media only screen and (max-width: 767px) {
+  .serviceCard {
+    width: 85%;
+    gap: 20px;
+  }
+  .servCardIcon {
+    position: absolute;
+    bottom: 180px;
+  }
+  .serviceCardImgcont {
+    height: 320px;
+  }
+  .funFactsCard {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 45%;
+  }
+  .funFactsIcon {
+    position: relative;
+  }
+  .funFactsCard::before {
+    display: none;
+  }
+  .funFactsText {
+    text-align: center;
+  }
+  .upcomingEventCard {
+    width: 85%;
+  }
 }
