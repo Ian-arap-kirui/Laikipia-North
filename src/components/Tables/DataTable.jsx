@@ -12,7 +12,7 @@ const DataTable = ({ columns, data, slug, title, description }) => {
     renderCell: (params) => {
       return (
         <div className="action">
-          <Link to={`/${slug}/${encodeURIComponent(params.row.name)}`}>
+          <Link to={`/${slug}/${params.row.name.replace(/\s+/g, "-")}`}>
             <FontAwesomeIcon icon={faEye} />
           </Link>
         </div>

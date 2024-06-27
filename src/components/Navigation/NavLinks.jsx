@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
 import "./nav.css";
 
-const Links = [
+export const Links = [
   {
     id: 0,
     title: "Home",
@@ -45,7 +45,7 @@ const Links = [
 
 const NavLinks = () => {
   return (
-    <div className="links">
+    <div className="mainLinks">
       {Links.map((item) => (
         <div key={item.id} className="link-item">
           <NavLink to={item.link} activeClassName="link active">

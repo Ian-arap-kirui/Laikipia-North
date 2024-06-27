@@ -71,7 +71,10 @@ const ServiceDetailsContainer = ({ service }) => {
             <div className="servicefilteredProjects">
               {filteredProjects.map((project) => (
                 <Link
-                  to={`${location.pathname}/projects/${project.name}`}
+                  to={`${location.pathname}/projects/${project.name.replace(
+                    /\s+/g,
+                    "-"
+                  )}`}
                   key={project.id}
                 >
                   <h4>{project.name}</h4>
