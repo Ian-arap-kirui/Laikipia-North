@@ -9,6 +9,24 @@ body {
   background-color: #fff;
   background-color: var(--whiteColor);
 }
+@media only screen and (max-width: 767px) {
+  :root {
+    --card-title-fontSize: 18px;
+    --titleFontSize: 24px;
+    --fontSize: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --card-title-fontSize: 20px;
+    --fontSize: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  :root {
+    --card-title-fontSize: 20px;
+  }
+}
 :root {
   font-family: "Montserrat", serif;
   --fontFamily: "Montserrat", sans-serif;

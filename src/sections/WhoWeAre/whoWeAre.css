@@ -127,7 +127,7 @@
   font-weight: 600;
 }
 .weAreList > ul > li {
-  margin-top: 12px;
+  margin: 12px 0;
   position: relative;
   padding-left: 20px;
   font-weight: 500;
@@ -157,10 +157,24 @@
   .weAreLeft {
     display: none;
   }
+  .weAreTitle > h3 {
+    font-size: 28px;
+  }
   .weAreContainer {
     margin: 0;
+    width: 90%;
   }
   .weAreRight {
     width: 97%;
+  }
+  .weAreText {
+    padding: 0;
+    margin: 0;
+  }
+  .weAreTextList {
+    flex-direction: column;
+  }
+  .weAreList > ul > li {
+    padding-left: 0;
   }
 }

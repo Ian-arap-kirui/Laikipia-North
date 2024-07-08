@@ -10,3 +10,12 @@
 .sectionHeader > p {
   width: 75%;
 }
+@media only screen and (max-width: 767px) {
+  .sectionHeader > h3 {
+    font-size: 28px;
+  }
+  .sectionHeader > P {
+    font-size: 14px;
+    width: 100%;
+  }
+}

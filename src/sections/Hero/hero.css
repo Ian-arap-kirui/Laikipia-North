@@ -207,6 +207,7 @@
   background-color: var(--mainColor);
   color: var(--whiteColor);
 }
+
 @media only screen and (max-width: 767px) {
   .heroSection {
     height: 95svh;
@@ -249,5 +250,17 @@
   }
   .heroSocialIcons {
     display: none;
+  }
+}
+@media only screen and (min-width: 220px) and (max-width: 766px) {
+  .heroSection {
+    height: 90svh;
+  }
+  .heroContainer {
+    width: 90%;
+    padding: 0;
+  }
+  .heroRight > img {
+    height: 300px;
   }
 }
