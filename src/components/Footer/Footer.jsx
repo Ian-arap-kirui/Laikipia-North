@@ -102,10 +102,7 @@ const Footer = () => {
                 color: "#afafaf",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-              similique provident nemo eveniet quis voluptate porro! Dignissimos
-              earum, illum, eaque ullam quisquam perferendis unde possimus
-              inventore necessitatibus cum optio aliquid!
+              Lorem ipsum dolor sit amet consectetur
             </p>
           </div>
           {FooterLinks.map((item) => {
