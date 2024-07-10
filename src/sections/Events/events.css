@@ -49,5 +49,10 @@
 @media only screen and (max-width: 767px) {
   .eventsContent {
     flex-direction: column;
+    padding: 0;
+    gap: 1em;
+  }
+  .upcomingEvents {
+    margin: 3em 0;
   }
 }

@@ -17,3 +17,22 @@
   padding: 4em 0 6em;
   position: relative;
 }
+@media only screen and (max-width: 767px) {
+  .counselTestimonialContent {
+    padding: 0;
+  }
+  .counselTestimonialContent > div {
+    width: 93%;
+  }
+  .slick-prev {
+    position: absolute;
+    top: 95%;
+    left: 10%;
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 95%;
+    right: 60%;
+  }
+}
