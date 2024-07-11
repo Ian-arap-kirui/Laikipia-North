@@ -116,12 +116,31 @@
 .serviceCardContainer > div {
   width: 30%;
 }
+
 @media only screen and (max-width: 767px) {
   .servSectionContainer {
     padding: 4em 0 0;
   }
+  .serviceCardContainer {
+    width: 95%;
+  }
+  .serviceCardContainer > div {
+    width: 100%;
+  }
+  .aboutUsServSectionContainer {
+    padding: 0 0 2em;
+  }
+  .aboutUsServSectionContent {
+    flex-direction: column;
+    width: 95%;
+  }
   .servSectionContent {
     flex-direction: column;
     gap: 0;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 766px) {
+  .serviceCardContainer > div {
+    width: 85%;
   }
 }

@@ -287,9 +287,33 @@
     width: 90%;
     gap: 20px;
   }
+  .aboutUsServCard {
+    width: 100%;
+    margin: 0;
+  }
+
+  .aboutUsFunFactsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    text-align: center;
+  }
+  .aboutUsFunFactsCard::before {
+    display: none;
+  }
+  .aboutUsFunFactsText > h2 {
+    font-size: 28px;
+  }
+  .aboutUsFunFactsIcon {
+    position: relative;
+  }
   .servCardIcon {
     position: absolute;
-    bottom: 180px;
+    bottom: 230px;
   }
   .serviceCardImgcont {
     height: 320px;
@@ -313,6 +337,12 @@
     width: 90%;
   }
 }
+@media only screen and (min-width: 426px) and (max-width: 766px) {
+  .aboutUsServCard {
+    width: 75%;
+    margin: 0;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   .servCardIcon {
     position: absolute;
@@ -329,6 +359,6 @@
 @media only screen and (max-width: 320px) {
   .servCardIcon {
     position: absolute;
-    bottom: 265px;
+    bottom: 250px;
   }
 }

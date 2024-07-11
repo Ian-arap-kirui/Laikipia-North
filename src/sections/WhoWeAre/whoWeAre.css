@@ -178,3 +178,16 @@
     padding-left: 0;
   }
 }
+@media only screen and (min-width: 426px) and (max-width: 766px) {
+  .weAreRight {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .weAreTitle > h3 {
+    font-size: 20px;
+  }
+  .weAreList > h4 {
+    font-size: 18px;
+  }
+}

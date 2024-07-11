@@ -212,6 +212,9 @@
   .heroSection {
     height: 95svh;
   }
+  .hero2SectionText > h1 {
+    font-size: 24px;
+  }
 
   .heroSection::before {
     display: none;

@@ -39,7 +39,8 @@
   gap: 30px;
 }
 @media only screen and (max-width: 767px) {
-  .funFacts {
+  .funFacts,
+  .aboutUsFunFacts {
     height: auto;
     padding: 2em 0;
     width: 100svw;
@@ -47,5 +48,6 @@
   .funFactsWrapper {
     flex-wrap: wrap;
     height: 100%;
+    width: 100%;
   }
 }
