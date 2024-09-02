@@ -14,6 +14,7 @@ function App() {
       children: routes,
     },
   ]);
+
   return (
     <Suspense fallback={<PageLoader />}>
       <RouterProvider router={router} />

@@ -33,7 +33,7 @@ const ServiceDetailsContainer = ({ service }) => {
 
   return (
     <>
-      {isServiceRoute && !isConstituencyOfficeRoute && (
+      {isServiceRoute && (
         <div className="serviceDetailsContainer">
           <h4>{service.title}</h4>
           <p>{service.description}</p>
@@ -49,7 +49,7 @@ const ServiceDetailsContainer = ({ service }) => {
         </div>
       )}
 
-      {isConstituencyOfficeRoute && (
+      {/* {isConstituencyOfficeRoute && (
         <div className="serviceDetailsContainer">
           <h5>The {service.title} deals with:</h5>
           <ul>
@@ -98,7 +98,7 @@ const ServiceDetailsContainer = ({ service }) => {
             </>
           )}
         </div>
-      )}
+      )} */}
 
       {!isServiceRoute && !isConstituencyOfficeRoute && (
         <>

@@ -25,13 +25,9 @@ const FooterLinks = [
         title: "Blogs",
         link: "/blogs",
       },
+
       {
         id: 3,
-        title: "Projects",
-        link: "/projects",
-      },
-      {
-        id: 4,
         title: "Services",
         link: "/services",
       },
@@ -49,7 +45,7 @@ const FooterLinks = [
       {
         id: 1,
         title: "Our Services",
-        link: "/about-us",
+        link: "/services",
       },
     ],
   },
