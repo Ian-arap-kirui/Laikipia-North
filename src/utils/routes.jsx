@@ -38,6 +38,10 @@ const SingleBlogPage = lazyWithDelay(
   () => import("../pages/Blogs/SingleBlog"),
   2000
 );
+const SingleWardPage = lazyWithDelay(
+  () => import("../pages/Wards/SingleWardPage/SingleWardPage"),
+  2000
+);
 const SingleEventPage = lazyWithDelay(
   () => import("../pages/Events/SingleEvent"),
   2000
@@ -76,6 +80,10 @@ const routes = [
   {
     path: "/wards",
     element: <WardsPage />,
+  },
+  {
+    path: "/wards/:wardName",
+    element: <SingleWardPage />,
   },
   {
     path: "/projects",

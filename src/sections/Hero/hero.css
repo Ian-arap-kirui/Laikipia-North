@@ -120,11 +120,49 @@
   width: 41.66666667%;
   position: relative;
 }
-.heroRight > img {
+.wardCards {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
+
+.wardCard {
+  position: relative;
+  width: 45%;
+  overflow: hidden; /* Ensures that any zoom effect doesn't overflow the container */
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.wardCard > img {
+  width: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for zoom and opacity */
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.wardCard:hover > img {
+  transform: scale(1.05); /* Zoom out effect */
+  opacity: 0.8; /* Slightly reduce opacity */
+}
+
+.wardCard > h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the text horizontally and vertically */
+  z-index: 2;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for text visibility */
+  color: black; /* Ensure text is visible over image */
+  pointer-events: none; /* Prevent text from interfering with hover state */
+}
+
+.wardCard:hover > h5 {
+  opacity: 1; /* Show text on hover */
+}
+
 .heroSocialIcons {
   display: none;
   display: flex;

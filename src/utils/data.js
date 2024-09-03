@@ -1,5 +1,8 @@
 import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import CDFLOGO from "../assets/cdf-official-logo.png";
+import sosianMap from "../assets/sosian-ward-clipped.png";
+import segeraMap from "../assets/segera-ward-clipped.png";
+import mukogodoMap from "../assets/mukogodo.jpg";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "./projectsData";
 
@@ -38,93 +41,90 @@ export const constituencyData = [
     wards: [
       {
         id: 0,
-        ward: [
+        title: "Sosian Ward",
+        img: sosianMap,
+        wardList: [
           {
-            id: 0,
-            title: "Mukogodo West Ward",
-            wardList: [
-              {
-                listItem: "County Assembly Ward No.:",
-              },
-              {
-                listItem: " County Assembly Ward Name: Mukogodo West",
-              },
-              {
-                listItem: " County Assembly Ward Population (Approx.):",
-              },
-              {
-                listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
-              },
-              {
-                listItem:
-                  " County  Assembly Ward Description: comprises part of",
-              },
-            ],
+            listItem: "County Assembly Ward No.:",
           },
           {
-            id: 1,
-            title: "Mukogodo East Ward",
-            wardList: [
-              {
-                listItem: "County Assembly Ward No.:",
-              },
-              {
-                listItem: " County Assembly Ward Name: Mukogodo East",
-              },
-              {
-                listItem: " County Assembly Ward Population (Approx.):",
-              },
-              {
-                listItem: "County Assembly Ward Area In Sq. Km (Approx.):",
-              },
-              {
-                listItem: "County Assembly Ward Description: comprises part of",
-              },
-            ],
+            listItem: " County Assembly Ward Name: Sosian",
           },
           {
-            id: 2,
-            title: "Sosian Ward",
-            wardList: [
-              {
-                listItem: "County Assembly Ward No.:",
-              },
-              {
-                listItem: " County Assembly Ward Name: Sosian",
-              },
-              {
-                listItem: " County Assembly Ward Population (Approx.):",
-              },
-              {
-                listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
-              },
-              {
-                listItem:
-                  " County  Assembly Ward Description: comprises part of",
-              },
-            ],
+            listItem: " County Assembly Ward Population (Approx.):",
           },
           {
-            id: 3,
-            title: "Segera Ward",
-            wardList: [
-              {
-                listItem: "County Assembly Ward No.:",
-              },
-              {
-                listItem: " County Assembly Ward Name: Segera",
-              },
-              {
-                listItem: " County Assembly Ward Population (Approx.):",
-              },
-              {
-                listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
-              },
-              {
-                listItem:
-                  " County  Assembly Ward Description: comprises part of",
-              },
-            ],
+            listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
+          },
+          {
+            listItem: " County  Assembly Ward Description: comprises part of",
+          },
+        ],
+      },
+      {
+        id: 1,
+        title: "Mukogodo East Ward",
+        img: mukogodoMap,
+        wardList: [
+          {
+            listItem: "County Assembly Ward No.:",
+          },
+          {
+            listItem: " County Assembly Ward Name: Mukogodo East",
+          },
+          {
+            listItem: " County Assembly Ward Population (Approx.):",
+          },
+          {
+            listItem: "County Assembly Ward Area In Sq. Km (Approx.):",
+          },
+          {
+            listItem: "County Assembly Ward Description: comprises part of",
+          },
+        ],
+      },
+
+      {
+        id: 2,
+        title: "Segera Ward",
+        img: segeraMap,
+        wardList: [
+          {
+            listItem: "County Assembly Ward No.:",
+          },
+          {
+            listItem: " County Assembly Ward Name: Segera",
+          },
+          {
+            listItem: " County Assembly Ward Population (Approx.):",
+          },
+          {
+            listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
+          },
+          {
+            listItem: " County  Assembly Ward Description: comprises part of",
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "Mukogodo West Ward",
+        img: mukogodoMap,
+        wardList: [
+          {
+            listItem: "County Assembly Ward No.:",
+          },
+          {
+            listItem: " County Assembly Ward Name: Mukogodo West",
+          },
+          {
+            listItem: " County Assembly Ward Population (Approx.):",
+          },
+          {
+            listItem: " County Assembly Ward Area In Sq. Km (Approx.):",
+          },
+          {
+            listItem: " County  Assembly Ward Description: comprises part of",
           },
         ],
       },

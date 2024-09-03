@@ -10,9 +10,10 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link, useLocation } from "react-router-dom";
+import { constituencyData } from "../../utils/data";
 const Hero = ({ page }) => {
   const location = useLocation();
-
+  const wards = constituencyData.map((item) => item.wards);
   // Split the current location path into parts
   const pathnames = location.pathname.split("/").filter((x) => x);
   return (
@@ -23,23 +24,38 @@ const Hero = ({ page }) => {
             <div className="heroContainer">
               <div className="heroContent">
                 <div className="heroLeft">
-                  <h6>DISCOVER THE CITY</h6>
+                  <h6>DISCOVER </h6>
                   <h1>Laikipia North Constituency</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetuer adipiscing phasellus
-                    hendrerit lorem dolor sit amet magna nibh nec urna in nisi
-                    neque aliquet ve, dapibus id dolor sit amet magna aliqu
-                    amet.
+                    Explore laikipia north constituency wards and our project{" "}
+                    <br /> distribution across the constituency
                   </p>
                   <Link to={"/about-us"} className="primaryButton">
                     Learn More
                   </Link>
                 </div>
                 <div className="heroRight">
-                  <img src={heroImg} alt="banner image" loading="lazy" />
+                  <div className="wardCards">
+                    {wards[0].map((item) => {
+                      // Replace spaces with dashes in the item title
+                      const formattedTitle = item.title.replace(/\s+/g, "-");
+
+                      return (
+                        <Link
+                          to={`/wards/${formattedTitle}`}
+                          className="wardCard"
+                          key={item.id}
+                        >
+                          <h5>{item.title}</h5>
+                          <img src={item.img} alt="" />
+                        </Link>
+                      );
+                    })}
+                  </div>
+                  {/* <img src={heroImg} alt="banner image" loading="lazy" />
                   <a href="" className="playIcon">
                     <FontAwesomeIcon icon={faPlay} />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
