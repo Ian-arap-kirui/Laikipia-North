@@ -6,24 +6,28 @@ import { useParams } from "react-router-dom";
 const SingleServiceEvent = ({ services }) => {
   const { eventTitle } = useParams();
 
-  // extract events array from service
-  const events = services.map((service) => service.events);
+  // Check if services is defined and an array
+  if (!services || !Array.isArray(services)) {
+    return <p>Services not found</p>;
+  }
 
-  // Filter the services array to find the service with the matching id
-  const filteredServiceEvent = events[2].find(
-    (event) => event.link === eventTitle
+  // Extract and flatten events array from services
+  const events = services.flatMap((service) => service.events || []);
+
+  // Filter the events array to find the event with the matching link
+  const filteredServiceEvent = events.find(
+    (event) => event?.link === eventTitle
   );
 
-  // Handle the case where no service is found
+  // Handle the case where no event is found
   if (!filteredServiceEvent) {
     return <p>Event not found</p>;
   }
+
   return (
-    <>
-      <div className="singleServiceEvent">
-        <Content page="Events" event={filteredServiceEvent} />
-      </div>
-    </>
+    <div className="singleServiceEvent">
+      <Content page="Events" event={filteredServiceEvent} />
+    </div>
   );
 };
 

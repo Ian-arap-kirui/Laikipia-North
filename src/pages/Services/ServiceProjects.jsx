@@ -18,6 +18,7 @@ const ServiceProjects = ({ services }) => {
     { field: "projectName", headerName: "Project Name", width: 400 },
     { field: "implementationStatus", headerName: "Status", width: 150 },
     { field: "financialYear", headerName: "Financial Year", width: 250 },
+    { field: "Ward", headerName: "Ward", width: 250 },
     { field: "amountAllocated", headerName: "Amount Allocated", width: 200 },
   ];
   return (
