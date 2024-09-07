@@ -14,10 +14,10 @@ const TopBar = () => {
             </a>
           </div>
           <div className="rightTopInner">
-            <FontAwesomeIcon icon={faUser} className="navIcon" />
+            {/* <FontAwesomeIcon icon={faUser} className="navIcon" />
             <Link to={"/"} className="loginLink">
               Login
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

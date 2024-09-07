@@ -27,8 +27,10 @@ const Hero = ({ page }) => {
                   <h6>DISCOVER </h6>
                   <h1>Laikipia North Constituency</h1>
                   <p>
-                    Explore laikipia north constituency wards and our project{" "}
-                    <br /> distribution across the constituency
+                    Laikipia North Constituency is dedicated to fostering
+                    development, supporting local communities, and advancing
+                    sustainable projects to create a brighter future for
+                    everyone.
                   </p>
                   <Link to={"/about-us"} className="primaryButton">
                     Learn More

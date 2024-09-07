@@ -49,6 +49,11 @@
   display: flex;
   justify-content: space-between;
 }
+.logoContainer > img {
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .navRight {
   width: 57%;
@@ -180,8 +185,8 @@
 }
 .navWrapper > div:nth-child(1) {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
+  justify-content: start;
 }
 .mainRightContainer {
   display: flex;

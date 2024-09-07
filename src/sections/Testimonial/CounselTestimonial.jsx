@@ -11,7 +11,7 @@ const CounselTestimonial = () => {
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
@@ -48,21 +48,9 @@ const CounselTestimonial = () => {
   };
   return (
     <section className="counselTestimonials">
-      <SectionHeader
-        title={"What Your Counselors Says"}
-        subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
-        }
-      />
+      <SectionHeader title={"What Residents Say"} subtitle={""} />
       <div className="counselTestimonialContent">
         <Slider {...settings}>
-          <CounselTestimonialCards />
-          <CounselTestimonialCards />
-          <CounselTestimonialCards />
-          <CounselTestimonialCards />
-          <CounselTestimonialCards />
-          <CounselTestimonialCards />
-          <CounselTestimonialCards />
           <CounselTestimonialCards />
         </Slider>
       </div>

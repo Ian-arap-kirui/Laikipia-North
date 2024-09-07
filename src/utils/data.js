@@ -136,7 +136,7 @@ export const constituencyData = [
         title: "NGCDF",
         link: "NGCDF",
         description:
-          "Laikipia North is an electoral constituency in Kenya. It is one of three constituencies of Laikipia County. The constituency was established for the 2013 elections. It is among the ASAL counties in Kenya. The constituency lies in an area of ApproximatelySq. Km 2,295.50 and its population is approximately 81,094 The Member of Parliament for this constituency is, Honorable Sarah Lekorere.",
+          "We manage and implement the National Government Constituencies Development Fund (NGCDF), focusing on funding projects in education, health, and infrastructure that impact the community.",
         members: [
           {
             name: "Charles Kimotho Ndungu",
@@ -885,7 +885,7 @@ export const constituencyData = [
         title: "Constituency Office",
         link: "constituency-office",
         description:
-          "Laikipia North is an electoral constituency in Kenya. It is one of three constituencies of Laikipia County. The constituency was established for the 2013 elections. It is among the ASAL counties in Kenya. The constituency lies in an area of ApproximatelySq. Km 2,295.50 and its population is approximately 81,094 The Member of Parliament for this constituency is, Honorable Sarah Lekorere.",
+          "Our office serves as a resource hub for residents to access services, lodge requests, and engage with their elected representatives on matters that affect their day-to-day lives.",
         projects: projects,
         events: [
           {

@@ -13,13 +13,13 @@ const Counselors = () => {
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     {
-      name: "John Doe",
+      name: "Mr. Adan",
       designation: "Fund Manager",
       image: DummyProfile,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     {
-      name: "Jane Smith",
+      name: "Mr. Paul",
       designation: "Constituency",
       image: DummyProfile,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
@@ -36,9 +36,9 @@ const Counselors = () => {
   return (
     <section className="counselors">
       <SectionHeader
-        title={"Our Team"}
+        title={"Meet Our Leadership Team"}
         subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+          "Our team is led by dedicated individuals committed to fostering development and ensuring that every resident of Laikipia North has access to essential services and opportunities."
         }
       />
       <div className="teamSectionContent">

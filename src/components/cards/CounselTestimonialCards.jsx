@@ -22,10 +22,9 @@ const CounselTestimonialCards = () => {
       <ul className="starIcons">{renderStars()}</ul>
 
       <p>
-        “Lorem ipsum dolor sit amet, consectetur adipiscing elitsed eiusmod
-        tempor elite incididunt labore dolore magna aliqua Quis ipsum
-        suspendisse ultrices set amet set do eimusd tempor labore sit dolor
-        magna aliiqua amet.”
+        “I've lived in Laikipia North all my life, and I have seen significant
+        improvements in infrastructure, especially in the healthcare sector. The
+        leadership is committed to addressing our needs”
       </p>
       <div className="testimonialDetails">
         <div className="testimonialProfile">
@@ -33,7 +32,7 @@ const CounselTestimonialCards = () => {
 
           <div className="testimonialProfileText">
             <h5>John Smith</h5>
-            <span>Member of Parliament(MP)</span>
+            <span> Resident of Sosian Ward.</span>
           </div>
         </div>
         <div className="testimonialQuoteIcon">

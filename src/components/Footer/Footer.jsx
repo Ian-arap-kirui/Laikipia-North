@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
+import Logo from "../../assets/darkBg-lnc-logo.svg";
 import TwitterIcon from "../../assets/twitter-icon.png";
 import InstaIcon from "../../assets/insta-icon.png";
 import PinterestIcon from "../../assets/pinterest-icon.png";
@@ -89,9 +90,9 @@ const Footer = () => {
           <div className="cont1">
             {" "}
             <Link to="/">
-              <img src={""} alt="logo" loading="lazy" className="logo" />
+              <img src={Logo} alt="logo" loading="lazy" className="logo" />
             </Link>
-            <p
+            {/* <p
               style={{
                 fontStyle: "italic",
                 fontWeight: "lighter",
@@ -99,7 +100,7 @@ const Footer = () => {
               }}
             >
               Lorem ipsum dolor sit amet consectetur
-            </p>
+            </p> */}
           </div>
           {FooterLinks.map((item) => {
             return (

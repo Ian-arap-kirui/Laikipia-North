@@ -12,9 +12,9 @@ const WhoWeAre = ({ title, page }) => {
       {title === "cityEvents" ? (
         <div className="weAreHeader">
           <SectionHeader
-            title={"Explore City Events"}
+            title={"Explore Our Local Events"}
             subtitle={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+              "We encourage community involvement through various events and activities. Engage with leaders, take part in workshops, and join hands in creating a thriving Laikipia North."
             }
           />
         </div>
@@ -60,13 +60,13 @@ const WhoWeAre = ({ title, page }) => {
                   <h3>Laikipia North Consituency</h3>
                 </>
               )}
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, facilis? Officia autem praesentium porro dolore
                 eligendi distinctio molestiae deleniti quia aperiam ipsum
                 asperiores nulla quaerat, id perspiciatis? Est, consectetur
                 doloribus?
-              </p>
+              </p> */}
             </div>
             <div className="weAreTextList">
               <div className="weAreIcon">
@@ -76,19 +76,28 @@ const WhoWeAre = ({ title, page }) => {
                 {title === "cityEvents" ? (
                   <h4>Sustainable Innovation Is Our Pathway:</h4>
                 ) : (
-                  <h4>Our Role Is To:</h4>
+                  <h4>Our Role to the Community</h4>
                 )}
 
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos, officia ratione consequuntur error, natus
-                  deleniti ullam deserunt veritatis,
+                  Laikipia North Constituency is committed to improving the
+                  lives of its residents through inclusive governance,
+                  sustainable development, and community-focused programs. We
+                  strive to:
                 </p>
                 <ul>
-                  <li>Praesent sapien massa, convallis a pellentesque nec.</li>
-                  <li>Praesent sapien massa, convallis a pellentesque nec.</li>
-                  <li>Praesent sapien massa, convallis a pellentesque nec.</li>
-                  <li>Praesent sapien massa, convallis a pellentesque nec.</li>
+                  <li>Provide accessible healthcare to rural populations.</li>
+                  <li>
+                    Improve education through the construction of new schools
+                    and support programs.
+                  </li>
+                  <li>
+                    Facilitate water projects to ensure clean water for all.
+                  </li>
+                  <li>
+                    Support small-scale farmers and promote food security
+                    initiatives.
+                  </li>
                 </ul>
               </div>
             </div>

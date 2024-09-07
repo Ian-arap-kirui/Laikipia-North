@@ -5,9 +5,9 @@ const LatestNews = () => {
   return (
     <section className="latestNews">
       <SectionHeader
-        title={"Latest News & Updates"}
+        title={"Stay Updated with Laikipia North"}
         subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+          "Get the latest news on development projects, events, and important announcements for Laikipia North residents."
         }
       />
       <div className="latestNewsSectionContent">

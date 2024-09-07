@@ -57,12 +57,7 @@ const ServSection = ({ page, services }) => {
             : "servSectionContainer"
         }
       >
-        <SectionHeader
-          title={"Find Governmental Services"}
-          subtitle={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
-          }
-        />
+        <SectionHeader title={"Our Services"} subtitle={""} />
         <div
           className={
             page === "aboutUs"

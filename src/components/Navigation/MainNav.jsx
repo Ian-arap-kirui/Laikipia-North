@@ -1,6 +1,7 @@
 import { faPlus, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import Logo from "../../assets/lnc-logo.svg";
 import "./nav.css";
 import NavLinks, { Links } from "./NavLinks";
 import { NavLink } from "react-router-dom";
@@ -20,7 +21,7 @@ const MainNav = () => {
     <div className="nav sticky">
       <div className="navWrapper">
         <div className="logoContainer">
-          <img src="" alt="logo" loading="lazy" />
+          <img src={Logo} alt="logo" loading="lazy" />
         </div>
         <div className="navRight">
           <NavLinks />

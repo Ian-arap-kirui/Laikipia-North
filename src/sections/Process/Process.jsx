@@ -5,28 +5,28 @@ const Process = () => {
   return (
     <section className="process">
       <SectionHeader
-        title={"Tackling the Process"}
+        title={"How We Work"}
         subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+          "Our approach to governance and development is systematic and transparent. Here’s how we ensure the success of our projects:"
         }
       />
       <div className="processSectionContent">
         <ProcessCard
           name={"Application"}
           summary={
-            "There are many variations of passages of the lorem Ipsum available but this is a majority have suffered."
+            "We identify community needs and apply for funding from relevant authorities."
           }
         />
         <ProcessCard
           name={"Processing"}
           summary={
-            "There are many variations of passages of the lorem Ipsum available but this is a majority have suffered."
+            "Proposals are evaluated, and qualified contractors are hired for implementation."
           }
         />
         <ProcessCard
-          name={"Complete"}
+          name={"Completion"}
           summary={
-            "There are many variations of passages of the lorem Ipsum available but this is a majority have suffered."
+            "Projects are completed on time, and residents benefit from improved infrastructure and services."
           }
         />
       </div>

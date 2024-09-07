@@ -24,7 +24,6 @@ const AllocationsDataTable = ({ data, title, description }) => {
   const dataArray = Array.isArray(data)
     ? data
     : Object.entries(data).map(([key, value]) => ({ id: key, ...value }));
-  console.log("Data array:", dataArray[0]); // Log data array to verify structure
 
   // Columns definition for the DataGrid
   const columns = [

@@ -54,7 +54,6 @@ const UpcomingEvents = ({ services }) => {
 
   // Flatten events from services array
   const events = services.flatMap((service) => service.events);
-  console.log(services);
   // Check if events is an array
   if (!Array.isArray(events) || events.length === 0) {
     return <div className="serviceEvents">No events available</div>;
@@ -65,7 +64,7 @@ const UpcomingEvents = ({ services }) => {
         <SectionHeader
           title={"Upcoming Events"}
           subtitle={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum suspendisse"
+            "Stay tuned for our upcoming events where you can participate in local development discussions, attend town hall meetings, and engage with your leaders to shape the future of Laikipia North."
           }
         />
       </div>
