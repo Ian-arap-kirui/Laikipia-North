@@ -105,7 +105,13 @@
   .left {
     width: 100%;
   }
+  .wardLeft {
+    width: 100%;
+  }
   .right {
+    width: 100%;
+  }
+  .wardRight {
     width: 100%;
   }
 }

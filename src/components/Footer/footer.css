@@ -105,4 +105,7 @@ label {
     /* margin: 2em; */
     padding: 2em;
   }
+  .cont1 {
+    width: 85%;
+  }
 }
