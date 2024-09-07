@@ -174,3 +174,9 @@ ul {
   font-weight: 600;
   font-family: var(--fontFamily2);
 }
+.css-3be3ve-MuiFormControl-root-MuiTextField-root-MuiDataGrid-toolbarQuickFilter {
+  position: absolute !important ;
+  top: -50px;
+  right: 0;
+  width: 35% !important;
+}

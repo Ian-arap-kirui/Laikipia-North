@@ -9,7 +9,10 @@ import "./content.css";
 import WardContent from "../../components/PageContent/WardContent";
 const Content = ({ page, service, event, wardProjects }) => {
   const { wardName } = useParams();
-  const normalizedWardName = wardName.replace(/-/g, " ").trim().toLowerCase();
+  const normalizedWardName = wardName
+    ? wardName.replace(/-/g, " ").trim().toLowerCase()
+    : ""; // Default to an empty string if wardName is undefined.
+
   return (
     <div className="contentContainer">
       <section
@@ -18,6 +21,8 @@ const Content = ({ page, service, event, wardProjects }) => {
             ? "eventsLeft"
             : page === "Services"
             ? "serviceLeft"
+            : page === normalizedWardName
+            ? "wardLeft"
             : "left"
         }
       >
@@ -33,11 +38,16 @@ const Content = ({ page, service, event, wardProjects }) => {
           <WardContent wardProjects={wardProjects} />
         ) : null}
       </section>
-      {page === "Services" || "Events" || normalizedWardName ? null : (
+      {page === "Services" || "Events" ? null : (
         <section className="right">
           <SideBar />
         </section>
       )}
+      {page === normalizedWardName ? (
+        <div className="wardRight">
+          <SideBar />
+        </div>
+      ) : null}
     </div>
   );
 };
