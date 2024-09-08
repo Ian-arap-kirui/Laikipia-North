@@ -9,7 +9,7 @@ const Counselors = () => {
     {
       name: "Honorable Sarah Lekorere",
       designation: "Member of Parliament",
-      image: DummyProfile,
+      image: "https://www.olekaparofoundation.org/assets/prof4-4968cccd.jpeg",
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     {

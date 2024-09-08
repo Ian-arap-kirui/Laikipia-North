@@ -1,0 +1,29 @@
+.constituencyOfficeCards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 2em 0 4em 0;
+  justify-content: space-between;
+}
+.constituencyOfficeCards > a {
+  width: 47%;
+}
+.constituencyOfficeCard > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.educationReport {
+  margin: 3em 0;
+}
+
+.educationReport > h4 {
+  margin-bottom: 1em;
+}
+.educationReport > p {
+  margin-bottom: 2em;
+}
+.constituencyOfficeEvents > section {
+  width: 100%;
+}

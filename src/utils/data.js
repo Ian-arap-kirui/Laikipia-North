@@ -1,6 +1,7 @@
 import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import CDFLOGO from "../assets/cdf-official-logo.png";
 import sosianMap from "../assets/sosian-ward-clipped.png";
+import sosianImg from "../assets/sosian-ward-img.jpg";
 import segeraMap from "../assets/segera-ward-clipped.png";
 import mukogodoMap from "../assets/mukogodo.jpg";
 import { faX } from "@fortawesome/free-solid-svg-icons";
@@ -43,6 +44,8 @@ export const constituencyData = [
         id: 0,
         title: "Sosian Ward",
         img: sosianMap,
+        img1: sosianImg,
+        desc: "Known for agriculture and community development projects.",
         wardList: [
           {
             listItem: "County Assembly Ward No.:",
@@ -65,6 +68,8 @@ export const constituencyData = [
         id: 1,
         title: "Mukogodo East Ward",
         img: mukogodoMap,
+        img1: sosianImg,
+        desc: "Emphasizes education and environmental sustainability.",
         wardList: [
           {
             listItem: "County Assembly Ward No.:",
@@ -88,6 +93,8 @@ export const constituencyData = [
         id: 2,
         title: "Segera Ward",
         img: segeraMap,
+        img1: sosianImg,
+        desc: "Focuses on healthcare and wildlife conservation.",
         wardList: [
           {
             listItem: "County Assembly Ward No.:",
@@ -110,6 +117,8 @@ export const constituencyData = [
         id: 3,
         title: "Mukogodo West Ward",
         img: mukogodoMap,
+        img1: sosianImg,
+        desc: "Works on pastoralism and water access.",
         wardList: [
           {
             listItem: "County Assembly Ward No.:",
@@ -882,7 +891,7 @@ export const constituencyData = [
       // },
       {
         id: 2,
-        title: "Constituency Office",
+        title: "Laikipia North Constituency Office",
         link: "constituency-office",
         description:
           "Our office serves as a resource hub for residents to access services, lodge requests, and engage with their elected representatives on matters that affect their day-to-day lives.",
