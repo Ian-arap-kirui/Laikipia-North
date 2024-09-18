@@ -891,8 +891,135 @@ export const constituencyData = [
       // },
       {
         id: 2,
-        title: "Laikipia North Constituency Office",
+        title: "Laikipia North Office(Nanyuki)",
         link: "constituency-office",
+        description:
+          "Our office serves as a resource hub for residents to access services, lodge requests, and engage with their elected representatives on matters that affect their day-to-day lives.",
+        projects: projects,
+        events: [
+          {
+            id: 0,
+            title: "Community fair",
+            eventOrganiser: "constituency-office",
+            link: "community-fair",
+            date: "25 August 2024",
+            time: "09:00 am - 02:00 pm",
+            location: "Dol dol",
+            cost: "free",
+            phone: "+254 987 654 32",
+            email: "health@laikipianorthconstituency.go.ke",
+            website: "laikipianorthconstituency.go.ke",
+            description: `Join us for a day of health awareness and wellness activities. Free health screenings, consultations,
+              and educational workshops will be available. Learn how to maintain a healthy lifestyle and get your
+              questions answered by medical professionals.`,
+            mapEmbedUrl:
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8534130535026!2d37.81297337489256!3d-1.289413712345123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x0bc0aef22bbf8c!2sHealth%20Center!5e0!3m2!1sen!2ske!4v1716454942347!5m2!1sen!2ske",
+          },
+          {
+            id: 1,
+            title: "Community Health Fair",
+            link: "community-health-fair",
+            eventOrganiser: "constituency-office",
+            date: "25 August 2024",
+            time: "09:00 am - 02:00 pm",
+            location: "Segera",
+            cost: "free",
+            phone: "+254 987 654 32",
+            email: "health@laikipianorthconstituency.go.ke",
+            website: "laikipianorthconstituency.go.ke",
+            description: `Join us for a day of health awareness and wellness activities. Free health screenings, consultations,
+                          and educational workshops will be available. Learn how to maintain a healthy lifestyle and get your
+                          questions answered by medical professionals.`,
+            mapEmbedUrl:
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8534130535026!2d37.81297337489256!3d-1.289413712345123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x0bc0aef22bbf8c!2sHealth%20Center!5e0!3m2!1sen!2ske!4v1716454942347!5m2!1sen!2ske",
+          },
+          {
+            id: 2,
+            title: "Education and Career Expo",
+            link: "education-and-career-expo",
+            date: "15 September 2024",
+            eventOrganiser: "constituency-office",
+            time: "10:00 am - 05:00 pm",
+            location: "Segera",
+            cost: "free",
+            phone: "+254 567 890 12",
+            email: "education@laikipianorthconstituency.go.ke",
+            website: "laikipianorthconstituency.go.ke",
+            description: `Explore a variety of educational and career opportunities at our annual expo. Meet representatives
+              from top universities and companies, attend workshops, and gain valuable insights to help you
+              plan your future.`,
+            mapEmbedUrl:
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8311311045672!2d37.82598527489255!3d-1.291231712345126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x123a8f22bbf8c!2sEducation%20Center!5e0!3m2!1sen!2ske!4v1716454942348!5m2!1sen!2ske",
+          },
+          {
+            id: 3,
+            title: "Environmental Conservation Workshop",
+            link: "environmental-conservation-workshop",
+            eventOrganiser: "constituency-office",
+            date: "30 November 2024",
+            time: "11:00 am - 03:00 pm",
+            location: "Nairobi",
+            cost: "open to all",
+            phone: "+254 321 654 98",
+            email: "environment@laikipianorthconstituency.go.ke",
+            website: "laikipianorthconstituency.go.ke",
+            description: `Participate in our hands-on workshop on environmental conservation. Learn about sustainable practices,
+              how to reduce your carbon footprint, and what you can do to help protect our planet. Everyone is
+              welcome.`,
+            mapEmbedUrl:
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8543140535026!2d37.81997337489256!3d-1.292413712345125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x1bc0aef22bbf8c!2sEnvironmental%20Center!5e0!3m2!1sen!2ske!4v1716454942349!5m2!1sen!2ske",
+          },
+        ],
+
+        members: [
+          {
+            name: "Charles Kimotho Ndungu",
+            designation: "Male Youth Representative",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Naundoi Lomoni Rukinyi",
+            designation: "Male Adult Representative",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Julia Nyambura Wachira",
+            designation: "Female Youth Representative",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Maria Adeket Iyanai",
+            designation: "Female Adult Representative",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Dickson Makin Leshepa",
+            designation: "Representative of Persons Living with Disability",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Daniel Kimalel Matunge",
+            designation: "Nominee of the Constituency Office (Male)",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Julia Cheporwas Lochingamoi",
+            designation: "Nominee of the Constituency Office (Female)",
+            profile: CDFLOGO,
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "Parliament Office(Bunge)",
+        link: "parliament-office",
         description:
           "Our office serves as a resource hub for residents to access services, lodge requests, and engage with their elected representatives on matters that affect their day-to-day lives.",
         projects: projects,

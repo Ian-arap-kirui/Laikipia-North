@@ -21,7 +21,7 @@ export const Links = [
     link: "/services",
     listItems: [
       { item: "Constituency Office", link: "/services/constituency-office" },
-      // { item: "Uwezo Fund", link: "/services/uwezo-fund" },
+      { item: "Parliament Office", link: "/services/parliament-office" },
       { item: "NGCDF", link: "/services/NGCDF" },
     ],
   },

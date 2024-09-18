@@ -8,56 +8,32 @@ import UpcomingEventsCard from "../../components/cards/UpcomingEventsCard";
 import Slider from "react-slick";
 import SectionHeader from "../../components/Headers/SectionHeader";
 const UpcomingEvents = ({ services }) => {
-  var settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    lazyLoad: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-    nextArrow: <FontAwesomeIcon icon={faLongArrowAltRight} />,
-    prevArrow: <FontAwesomeIcon icon={faLongArrowAltLeft} />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   // Check if services is provided and is an array
   if (!Array.isArray(services)) {
     return <div className="serviceEvents">No events available</div>;
   }
 
-  // Flatten events from services array
-  const events = services.flatMap((service) => service.events);
-  // Check if events is an array
-  if (!Array.isArray(events) || events.length === 0) {
+  // Map through services and extract the events, ensuring that service.events exists and is an array
+  const eventsArray = services.map((service) =>
+    Array.isArray(service.events) ? service.events : []
+  );
+
+  // Flatten the array of arrays into a single array
+  const events = [].concat(...eventsArray);
+
+  // Filter out undefined or malformed event objects and duplicate events by event.id
+  const uniqueEvents = events.filter(
+    (event, index, self) =>
+      event &&
+      event.id !== undefined &&
+      self.findIndex((e) => e.id === event.id) === index
+  );
+
+  // Check if uniqueEvents is an array and has items
+  if (!Array.isArray(uniqueEvents) || uniqueEvents.length === 0) {
     return <div className="serviceEvents">No events available</div>;
   }
+
   return (
     <section className="upcomingEvents">
       <div className="eventsHeader">
@@ -69,14 +45,11 @@ const UpcomingEvents = ({ services }) => {
         />
       </div>
       <div className="eventsContent">
-        {/* <Slider {...settings}> */}
-        {events.map((event) =>
-          // Add conditional rendering to check if event is valid
+        {uniqueEvents.map((event) =>
           event && event.id ? (
             <UpcomingEventsCard key={event.id} event={event} />
           ) : null
         )}
-        {/* </Slider> */}
       </div>
     </section>
   );
