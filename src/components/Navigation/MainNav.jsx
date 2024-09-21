@@ -1,7 +1,8 @@
-import { faPlus, faSearch } from "@fortawesome/free-solid-svg-icons";
+import {  faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import Logo from "../../assets/lnc-logo.svg";
+import smallLogo from "../../assets/lnc-small-logo-v1.svg";
 import "./nav.css";
 import NavLinks, { Links } from "./NavLinks";
 import { NavLink } from "react-router-dom";
@@ -26,7 +27,7 @@ const MainNav = () => {
         <div className="navRight">
           <NavLinks />
           <div className="mainRightContainer">
-            <FontAwesomeIcon icon={faSearch} className="icon" />
+            <FontAwesomeIcon icon={faSearch} className="icon"  style={{display:"none"}}/>
             <button className="primaryButton">Get in Touch</button>
           </div>
           <div className="hamburgerMenu" onClick={toggleMenu}>
@@ -40,7 +41,7 @@ const MainNav = () => {
           )}
           <div className={`mobileLinks ${menuOpen ? "open" : "closing"}`}>
             <div className="mobileTop">
-              <img src="" alt="logo" />
+              <img src={smallLogo} alt="logo" />
 
               <button className="closeButton" onClick={closeMenu}>
                 X

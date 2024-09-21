@@ -1,7 +1,6 @@
 import React from "react";
 import "./cards.css";
 import "./cards-cont.css";
-import servImg from "../../assets/business.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -25,6 +24,7 @@ const ServiceCards = ({ carDFor, page, service }) => {
     }
     return null;
   };
+  
   const renderServiceDesc = () => {
     if (isServiceCard) {
       return <p>{shortenDescription(service?.description, 35)}</p>;
@@ -50,7 +50,12 @@ const ServiceCards = ({ carDFor, page, service }) => {
     <div className={pageTypeClass}>
       <div className="serviceCardImgCont">
         <Link to={linkPath}>
-          <img src={servImg} alt="" className="serviceCardImg" loading="lazy" />
+          <img
+            src={service?.img} // Dynamically rendering the service-specific image
+            alt={service?.title || "Service Image"} // Adding a descriptive alt tag
+            className="serviceCardImg"
+            loading="lazy"
+          />
         </Link>
         {renderIcon()}
       </div>

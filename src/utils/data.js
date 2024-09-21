@@ -3,7 +3,10 @@ import CDFLOGO from "../assets/cdf-official-logo.png";
 import sosianMap from "../assets/sosian-ward-clipped.png";
 import sosianImg from "../assets/sosian-ward-img.jpg";
 import segeraMap from "../assets/segera-ward-clipped.png";
-import mukogodoMap from "../assets/mukogodo.jpg";
+import mukogodoMap from "../assets/mukogodo.png";
+import ngcdfImg from "../assets/cdf-official-logo.png";
+import nanyukiOffice from "../assets/lnc-nanyuki.png";
+import bungeTowers from "../assets/lnc-bunge-towers.png";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "./projectsData";
 
@@ -40,18 +43,18 @@ export const constituencyData = [
       },
     ],
     wards: [
-      {
+       {
         id: 0,
-        title: "Sosian Ward",
-        img: sosianMap,
+        title: "Mukogodo West Ward",
+        img: mukogodoMap,
         img1: sosianImg,
-        desc: "Known for agriculture and community development projects.",
+        desc: "Works on pastoralism and water access.",
         wardList: [
           {
             listItem: "County Assembly Ward No.:",
           },
           {
-            listItem: " County Assembly Ward Name: Sosian",
+            listItem: " County Assembly Ward Name: Mukogodo West",
           },
           {
             listItem: " County Assembly Ward Population (Approx.):",
@@ -64,33 +67,9 @@ export const constituencyData = [
           },
         ],
       },
-      {
+     
+          {
         id: 1,
-        title: "Mukogodo East Ward",
-        img: mukogodoMap,
-        img1: sosianImg,
-        desc: "Emphasizes education and environmental sustainability.",
-        wardList: [
-          {
-            listItem: "County Assembly Ward No.:",
-          },
-          {
-            listItem: " County Assembly Ward Name: Mukogodo East",
-          },
-          {
-            listItem: " County Assembly Ward Population (Approx.):",
-          },
-          {
-            listItem: "County Assembly Ward Area In Sq. Km (Approx.):",
-          },
-          {
-            listItem: "County Assembly Ward Description: comprises part of",
-          },
-        ],
-      },
-
-      {
-        id: 2,
         title: "Segera Ward",
         img: segeraMap,
         img1: sosianImg,
@@ -114,17 +93,42 @@ export const constituencyData = [
         ],
       },
       {
-        id: 3,
-        title: "Mukogodo West Ward",
+        id: 2,
+        title: "Mukogodo East Ward",
         img: mukogodoMap,
         img1: sosianImg,
-        desc: "Works on pastoralism and water access.",
+        desc: "Emphasizes education and environmental sustainability.",
         wardList: [
           {
             listItem: "County Assembly Ward No.:",
           },
           {
-            listItem: " County Assembly Ward Name: Mukogodo West",
+            listItem: " County Assembly Ward Name: Mukogodo East",
+          },
+          {
+            listItem: " County Assembly Ward Population (Approx.):",
+          },
+          {
+            listItem: "County Assembly Ward Area In Sq. Km (Approx.):",
+          },
+          {
+            listItem: "County Assembly Ward Description: comprises part of",
+          },
+        ],
+      },
+
+   {
+        id: 3,
+        title: "Sosian Ward",
+        img: sosianMap,
+        img1: sosianImg,
+        desc: "Known for agriculture and community development projects.",
+        wardList: [
+          {
+            listItem: "County Assembly Ward No.:",
+          },
+          {
+            listItem: " County Assembly Ward Name: Sosian",
           },
           {
             listItem: " County Assembly Ward Population (Approx.):",
@@ -137,6 +141,7 @@ export const constituencyData = [
           },
         ],
       },
+     
     ],
     projects: projects,
     services: [
@@ -144,6 +149,7 @@ export const constituencyData = [
         id: 0,
         title: "NGCDF",
         link: "NGCDF",
+        img:nanyukiOffice,
         description:
           "We manage and implement the National Government Constituencies Development Fund (NGCDF), focusing on funding projects in education, health, and infrastructure that impact the community.",
         members: [
@@ -893,6 +899,7 @@ export const constituencyData = [
         id: 2,
         title: "Laikipia North Office(Nanyuki)",
         link: "constituency-office",
+        img:nanyukiOffice,
         description:
           "Our office serves as a resource hub for residents to access services, lodge requests, and engage with their elected representatives on matters that affect their day-to-day lives.",
         projects: projects,
@@ -1020,6 +1027,7 @@ export const constituencyData = [
         id: 3,
         title: "Parliament Office(Bunge)",
         link: "parliament-office",
+        img:bungeTowers,
         description:
           "Our office serves as a resource hub for residents to access services, lodge requests, and engage with their elected representatives on matters that affect their day-to-day lives.",
         projects: projects,

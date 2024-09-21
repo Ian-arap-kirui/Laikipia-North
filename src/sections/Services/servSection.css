@@ -59,12 +59,13 @@
   position: relative;
 }
 .servSectionContent {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  gap: 80px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+gap: 50px;
+
 }
 .slick-slider {
   width: 70%;

@@ -46,6 +46,12 @@
   gap: 10px;
   margin: 2em 0;
 }
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .eventsContent {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .eventsContent {
     flex-direction: column;

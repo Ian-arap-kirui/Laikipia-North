@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./whoWeAre.css";
 import { faLandmarkDome } from "@fortawesome/free-solid-svg-icons";
-import weAreImg from "../../assets/heroImg.jpg";
+import weAreImg from "../../assets/lnc-1.jpg";
 import weAreImg1 from "../../assets/animals.jpg";
 import weAreImg2 from "../../assets/artifacts.jpg";
 import weAreImg3 from "../../assets/landscape1.jpg";

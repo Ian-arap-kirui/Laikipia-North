@@ -1,12 +1,18 @@
 /* SERVICE CARD */
 .serviceCard {
-  box-shadow: var(--boxShadow);
+  /* box-shadow: var(--boxShadow); */
   margin: 30px 0;
   position: relative;
   /* temporary fix for cards */
   width: 25em;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  height: max-content;
+}
+.serviceCard:hover {
+  box-shadow: var(--boxShadow);
+  transition: 0.5s ease;
 }
 .aboutUsServCard {
   box-shadow: var(--boxShadow);
@@ -18,9 +24,12 @@
 .aboutUsServCard > div > p {
   color: var(--blackColor);
 }
+.serviceCard > div:nth-child(1) {
+  height: 300px;
+}
 .serviceCardImgcont {
   width: 100%;
-  height: 250px;
+  height: 300px;
   position: relative;
 }
 .serviceCardImg {
@@ -65,7 +74,7 @@
   transform: rotateY(180deg); /* Flips the icon horizontally */
 }
 .servCardIcon::after {
-  content: "";
+  content: '';
   width: 0%;
   height: 0%;
   border-radius: 50%;
@@ -86,6 +95,10 @@
   justify-content: start;
   gap: 16px;
   padding: 20px;
+  height: 190px;
+}
+.serviceCardText > h4 {
+  text-align: start;
 }
 .serviceCardText > h4 > a {
   margin-bottom: 12px;
@@ -93,6 +106,7 @@
   font-weight: 600;
   color: black;
   text-decoration: none;
+  text-align: start;
 }
 .serviceCardText > a {
   color: black;
@@ -135,7 +149,7 @@
 }
 .aboutUsFunFactsCard::before,
 .funFactsCard::before {
-  content: "";
+  content: '';
   width: 1px;
   height: 80%;
   background-color: rgba(0, 170, 85, 0.5);
@@ -211,7 +225,7 @@
   width: 100%;
 }
 .upcomingEventCard::before {
-  content: "";
+  content: '';
   width: 0%;
   height: 100%;
   -webkit-transition: 0.5s ease-in-out;
@@ -264,6 +278,7 @@
   margin-bottom: 12px;
   font-size: var(--card-title-fontSize);
   font-weight: 600;
+  text-align: start;
 }
 .eventsDetails > p {
   color: var(--mainColor);
@@ -282,11 +297,25 @@
   text-decoration: none;
   color: var(--whiteColor);
 }
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .servCardIcon {
+    bottom: 250px;
+  }
+  .funFactsCard {
+    width: 25%;
+  }
+  .aboutUsFunFactsCard::before,
+  .funFactsCard::before {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .serviceCard {
     width: 90%;
     gap: 20px;
   }
+
   .aboutUsServCard {
     width: 100%;
     margin: 0;
@@ -313,7 +342,15 @@
   }
   .servCardIcon {
     position: absolute;
-    bottom: 230px;
+    bottom: 190px;
+  }
+  .serviceCardText > h4 {
+    text-align: start;
+    display: flex;
+  }
+  .serviceCardText > h4 > a {
+    font-size: 16px;
+    margin: 0;
   }
   .serviceCardImgcont {
     height: 320px;
@@ -333,8 +370,17 @@
   .funFactsText {
     text-align: center;
   }
+  .funFactsText > h2 {
+    font-size: 22px;
+  }
+  .funFactsText > p {
+    font-size: 12px;
+  }
   .upcomingEventCard {
     width: 90%;
+  }
+  .eventsDetails > h4 {
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 766px) {
@@ -344,21 +390,25 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
+  .serviceCard {
+    width: 85%;
+  }
+
   .servCardIcon {
     position: absolute;
-    bottom: 220px;
+    bottom: 190px;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
-  .servCardIcon {
+  /* .servCardIcon {
     position: absolute;
     bottom: 240px;
-  }
+  } */
 }
 @media only screen and (max-width: 320px) {
   .servCardIcon {
     position: absolute;
-    bottom: 250px;
+    bottom: 210px;
   }
 }

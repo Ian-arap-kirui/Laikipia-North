@@ -145,9 +145,9 @@
   transition: 0.5s;
 }
 .subItemLink::before {
-  content: ">";
+  content: '>';
   font-size: 0;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-weight: 600;
   color: var(--mainColor);
   transition: 0.2s ease;
@@ -261,8 +261,8 @@
 .closeButton {
   background: none;
   border: none;
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 100;
   cursor: pointer;
   color: var(--blackColor);
 }
@@ -272,7 +272,7 @@
   flex-direction: column;
   gap: 4px;
   justify-content: space-between;
-  height: 50%;
+  height: 75%;
   cursor: pointer;
 }
 
@@ -315,6 +315,27 @@
   align-items: center;
   align-self: center;
 }
+.mobileTop > img {
+  width: 50%;
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .logoContainer > img {
+    width: 100%;
+  }
+  .navRight {
+    width: 65%;
+  }
+  .mainLinks {
+    width: 70%;
+  }
+  .mainRightContainer > button {
+    padding: 12px;
+  }
+  .navWrapper > div:nth-child(1) {
+    width: 38%;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .topBar {
     height: 70px;
@@ -325,6 +346,14 @@
   }
   .topBarWrapper {
     flex-direction: column;
+  }
+  .mainRightContainer > button {
+    display: none;
+  }
+  .logoContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
