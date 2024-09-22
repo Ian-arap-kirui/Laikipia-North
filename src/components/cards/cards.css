@@ -99,6 +99,7 @@
 }
 .serviceCardText > h4 {
   text-align: start;
+  margin-top: 0.5em;
 }
 .serviceCardText > h4 > a {
   margin-bottom: 12px;
@@ -341,6 +342,7 @@
     position: relative;
   }
   .servCardIcon {
+    display: none;
     position: absolute;
     bottom: 190px;
   }

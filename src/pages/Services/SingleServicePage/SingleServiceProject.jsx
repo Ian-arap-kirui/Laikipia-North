@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 
-const SingleServiceProject = () => {
+const SingleServiceProject = ({projects}) => {
+  console.log(projects)
   const { projectTitle } = useParams();
   return <div>{projectTitle}</div>;
 };
