@@ -1,7 +1,23 @@
+import React, { useRef } from "react";
 import SectionHeader from "../../components/Headers/SectionHeader";
+import { AllBlogs } from "../../utils/blogs";
 import ServiceCards from "../../components/cards/ServiceCards";
-import "./latestNews.css";
+import "./latestNews.css"
 const LatestNews = () => {
+  const carouselRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="latestNews">
       <SectionHeader
@@ -11,9 +27,19 @@ const LatestNews = () => {
         }
       />
       <div className="latestNewsSectionContent">
-        <ServiceCards carDFor="latestBlogs" />
-        <ServiceCards carDFor="latestBlogs" />
-        <ServiceCards carDFor="latestBlogs" />
+        <button className="carousel-button-news left" onClick={scrollLeft}>
+          &lt;
+        </button>
+        <div className="carouselNews" ref={carouselRef}>
+          {AllBlogs.map((blog) => (
+            <div key={blog.id} className="carousel-item-news">
+              <ServiceCards carDFor="latestBlogs" blog={blog} />
+            </div>
+          ))}
+        </div>
+        <button className="carousel-button-news right" onClick={scrollRight}>
+          &gt;
+        </button>
       </div>
     </section>
   );

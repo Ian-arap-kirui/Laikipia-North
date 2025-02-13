@@ -907,6 +907,8 @@ export const constituencyData = [
           {
             id: 0,
             title: "Community fair",
+
+            img:"https://images.pexels.com/photos/12334810/pexels-photo-12334810.jpeg?auto=compress&cs=tinysrgb&w=600",
             eventOrganiser: "constituency-office",
             link: "community-fair",
             date: "25 August 2024",
@@ -917,15 +919,16 @@ export const constituencyData = [
             email: "health@laikipianorthconstituency.go.ke",
             website: "laikipianorthconstituency.go.ke",
             description: `Join us for a day of health awareness and wellness activities. Free health screenings, consultations,
-              and educational workshops will be available. Learn how to maintain a healthy lifestyle and get your
-              questions answered by medical professionals.`,
+            and educational workshops will be available. Learn how to maintain a healthy lifestyle and get your
+            questions answered by medical professionals.`,
             mapEmbedUrl:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8534130535026!2d37.81297337489256!3d-1.289413712345123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x0bc0aef22bbf8c!2sHealth%20Center!5e0!3m2!1sen!2ske!4v1716454942347!5m2!1sen!2ske",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8534130535026!2d37.81297337489256!3d-1.289413712345123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x0bc0aef22bbf8c!2sHealth%20Center!5e0!3m2!1sen!2ske!4v1716454942347!5m2!1sen!2ske",
           },
           {
             id: 1,
             title: "Community Health Fair",
             link: "community-health-fair",
+            img:"https://images.pexels.com/photos/30688589/pexels-photo-30688589/free-photo-of-healthcare-professional-checking-patient-s-blood-pressure.jpeg?auto=compress&cs=tinysrgb&w=1200",
             eventOrganiser: "constituency-office",
             date: "25 August 2024",
             time: "09:00 am - 02:00 pm",
@@ -938,12 +941,13 @@ export const constituencyData = [
                           and educational workshops will be available. Learn how to maintain a healthy lifestyle and get your
                           questions answered by medical professionals.`,
             mapEmbedUrl:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8534130535026!2d37.81297337489256!3d-1.289413712345123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x0bc0aef22bbf8c!2sHealth%20Center!5e0!3m2!1sen!2ske!4v1716454942347!5m2!1sen!2ske",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8534130535026!2d37.81297337489256!3d-1.289413712345123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x0bc0aef22bbf8c!2sHealth%20Center!5e0!3m2!1sen!2ske!4v1716454942347!5m2!1sen!2ske",
           },
           {
             id: 2,
             title: "Education and Career Expo",
             link: "education-and-career-expo",
+            img:"https://images.pexels.com/photos/11025024/pexels-photo-11025024.jpeg?auto=compress&cs=tinysrgb&w=1200",
             date: "15 September 2024",
             eventOrganiser: "constituency-office",
             time: "10:00 am - 05:00 pm",
@@ -955,13 +959,14 @@ export const constituencyData = [
             description: `Explore a variety of educational and career opportunities at our annual expo. Meet representatives
               from top universities and companies, attend workshops, and gain valuable insights to help you
               plan your future.`,
-            mapEmbedUrl:
+              mapEmbedUrl:
               "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8311311045672!2d37.82598527489255!3d-1.291231712345126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1234a2a1b%3A0x123a8f22bbf8c!2sEducation%20Center!5e0!3m2!1sen!2ske!4v1716454942348!5m2!1sen!2ske",
-          },
-          {
-            id: 3,
-            title: "Environmental Conservation Workshop",
-            link: "environmental-conservation-workshop",
+            },
+            {
+              id: 3,
+              title: "Environmental Conservation Workshop",
+              link: "environmental-conservation-workshop",
+              img:"https://images.pexels.com/photos/12334810/pexels-photo-12334810.jpeg?auto=compress&cs=tinysrgb&w=600",
             eventOrganiser: "constituency-office",
             date: "30 November 2024",
             time: "11:00 am - 03:00 pm",
@@ -1038,6 +1043,7 @@ export const constituencyData = [
             eventOrganiser: "constituency-office",
             link: "community-fair",
             date: "25 August 2024",
+            img:"https://images.pexels.com/photos/12334810/pexels-photo-12334810.jpeg?auto=compress&cs=tinysrgb&w=600",
             time: "09:00 am - 02:00 pm",
             location: "Dol dol",
             cost: "free",
@@ -1055,6 +1061,7 @@ export const constituencyData = [
             title: "Community Health Fair",
             link: "community-health-fair",
             eventOrganiser: "constituency-office",
+            img:"https://images.pexels.com/photos/12334810/pexels-photo-12334810.jpeg?auto=compress&cs=tinysrgb&w=600",
             date: "25 August 2024",
             time: "09:00 am - 02:00 pm",
             location: "Segera",
@@ -1072,6 +1079,7 @@ export const constituencyData = [
             id: 2,
             title: "Education and Career Expo",
             link: "education-and-career-expo",
+            img:"https://images.pexels.com/photos/12334810/pexels-photo-12334810.jpeg?auto=compress&cs=tinysrgb&w=600",
             date: "15 September 2024",
             eventOrganiser: "constituency-office",
             time: "10:00 am - 05:00 pm",
@@ -1091,6 +1099,7 @@ export const constituencyData = [
             title: "Environmental Conservation Workshop",
             link: "environmental-conservation-workshop",
             eventOrganiser: "constituency-office",
+            img:"https://images.pexels.com/photos/12334810/pexels-photo-12334810.jpeg?auto=compress&cs=tinysrgb&w=600",
             date: "30 November 2024",
             time: "11:00 am - 03:00 pm",
             location: "Nairobi",

@@ -6,14 +6,19 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { shortenDescription } from "../../utils/ShortenDesc";
 
-const ServiceCards = ({ carDFor, page, service }) => {
+const ServiceCards = ({ carDFor, page, service, blog }) => {
   const isServiceCard = carDFor === "serviceCards";
   const isLatestBlog = carDFor === "latestBlogs";
-  const pageTypeClass = page === "aboutUs" ? "aboutUsServCard" : "serviceCard";
-  const linkPath =
-    isServiceCard && service ? `/services/${service.link}` : "/blogs/3";
-  const linkText = isServiceCard && service ? service.title : "BlogTitle";
 
+  const pageTypeClass = page === "aboutUs" ? "aboutUsServCard" : "serviceCard";
+
+  // Determine the link path and text based on whether it's a service or blog
+  const linkPath = isServiceCard
+    ? `/services/${service?.link}`
+    : `/blogs/${blog?.id}`;
+  const linkText = isServiceCard ? service?.title : blog?.title;
+
+  // Render the appropriate icon for service cards
   const renderIcon = () => {
     if (isServiceCard) {
       return (
@@ -24,47 +29,43 @@ const ServiceCards = ({ carDFor, page, service }) => {
     }
     return null;
   };
-  
-  const renderServiceDesc = () => {
+
+  // Render the appropriate description based on whether it's a service or blog
+  const renderDescription = () => {
     if (isServiceCard) {
       return <p>{shortenDescription(service?.description, 35)}</p>;
-    }
-    return (
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sequi
-        cumque autem, quia vero saepe! Veritatis molestias delectus placeat ex,
-        ratione sunt reprehenderit excepturi quaerat adipisci mollitia
-        accusantium repellat veniam.
-      </p>
-    );
-  };
-
-  const renderBlogDetailsText = () => {
-    if (isLatestBlog) {
-      return <div>blogdetails</div>;
+    } else if (isLatestBlog) {
+      return <p>{shortenDescription(blog?.description, 15)}</p>;
     }
     return null;
+  };
+  
+  // Render the image based on whether it's a service or blog
+  const renderImage = () => {
+    const imageSrc = isServiceCard ? service?.img : blog?.img;
+    const imageAlt = isServiceCard ? service?.title : blog?.title;
+
+    return (
+      <img
+        src={imageSrc}
+        alt={imageAlt || "Card Image"}
+        className="serviceCardImg"
+        loading="lazy"
+      />
+    );
   };
 
   return (
     <div className={pageTypeClass}>
       <div className="serviceCardImgCont">
-        <Link to={linkPath}>
-          <img
-            src={service?.img} // Dynamically rendering the service-specific image
-            alt={service?.title || "Service Image"} // Adding a descriptive alt tag
-            className="serviceCardImg"
-            loading="lazy"
-          />
-        </Link>
+        <Link to={linkPath}>{renderImage()}</Link>
         {renderIcon()}
       </div>
       <div className="serviceCardText">
-        {renderBlogDetailsText()}
         <h4>
           <Link to={linkPath}>{linkText}</Link>
         </h4>
-        {renderServiceDesc()}
+        {renderDescription()}
         <Link className="read-more-btn" to={linkPath}>
           Read More
         </Link>

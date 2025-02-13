@@ -2,7 +2,7 @@ import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import SectionHeader from "../../components/Headers/SectionHeader";
 import Counselor from "../../components/cards/Counselor";
 import { faX } from "@fortawesome/free-solid-svg-icons";
-import DummyProfile from "../../assets/dummyProfile.jpg";
+import CDFLOGO from "../../assets/cdf-official-logo.png";
 import "./counselors.css";
 const Counselors = () => {
   const counselDataProfile = [
@@ -15,19 +15,19 @@ const Counselors = () => {
     {
       name: "Mr. Adan",
       designation: "Fund Manager",
-      image: DummyProfile,
+      image: CDFLOGO,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     {
       name: "Mr. Paul",
       designation: "Constituency",
-      image: DummyProfile,
+      image: CDFLOGO,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     {
       name: "Jane Smith",
       designation: "Chairperson (NGDCF)",
-      image: DummyProfile,
+      image: CDFLOGO,
       socialIcons: [faFacebook, faLinkedin, faX], // Add social icons here
     },
     // Add more counselor data objects as needed

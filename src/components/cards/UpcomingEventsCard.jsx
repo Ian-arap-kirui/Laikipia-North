@@ -14,7 +14,7 @@ const UpcomingEventsCard = ({ event }) => {
 
   return (
     <div className="upcomingEventCard" key={event.id}>
-      <img src={EventImg} alt="" />
+      <img src={event.img} alt="" />
       <div className="eventsDetails">
         <ul>
           {/* <li>Conference</li> */}

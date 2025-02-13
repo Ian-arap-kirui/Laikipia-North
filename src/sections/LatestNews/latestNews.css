@@ -7,14 +7,85 @@
 }
 .latestNewsSectionContent {
   display: flex;
+  position: relative;
   width: 75%;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
+.latestNewsSectionContent {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden; /* Hide overflow */
+}
+
+.carouselNews {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap items to the scroll container */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.carousel-item-news {
+  flex: 0 0 auto; /* Prevent items from shrinking */
+  scroll-snap-align: start; /* Snap items to the start of the container */
+  width: calc(100% / 3); /* Show 3 items at a time */
+  padding: 0 10px; /* Add spacing between items */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+.carousel-item-news>div{
+  width: 100%;
+}
+.carousel-button-news {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.carousel-button-news.left {
+  left: 0px;
+
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-button-news.right {
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .carousel-item-news {
+    width: calc(100% / 2); /* Show 2 items at a time on tablets */
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .latestNewsSectionContent {
     flex-wrap: wrap;
     width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-item-news {
+    width: 100%; /* Show 1 item at a time on mobile */
   }
 }
