@@ -66,6 +66,10 @@
   text-decoration: underline;
   transition: 1s all ease-in-out;
 }
+.details>h6{
+  /* color: #626262; */
+  font-weight: 400;
+}
 .recentPost {
   display: flex;
   justify-content: center;

@@ -2,6 +2,8 @@ import React from "react";
 import "./BlogContent.css";
 import { Link } from "react-router-dom";
 import dummyImg from "../../assets/heroImg.jpg";
+import { AllBlogs } from "../../utils/blogs";
+import { shortenDescription } from "../../utils/ShortenDesc";
 
 const SideBar = () => {
   // Extract categories and popular tags from the data
@@ -35,33 +37,19 @@ const SideBar = () => {
           </span>
         </div>
         <div className="recents">
-          <Link to={`/blogs/3`} className="recentPost">
-            <div className="recentImgContainer">
-              <img src={dummyImg} alt="post-image" loading="lazy" />
-            </div>
-            <div className="details">
-              <h6>description</h6>
-              <span>category</span>
-            </div>
-          </Link>
-          <Link to={`/blogs/3`} className="recentPost">
-            <div className="recentImgContainer">
-              <img src={dummyImg} alt="post-image" loading="lazy" />
-            </div>
-            <div className="details">
-              <h6>description</h6>
-              <span>category</span>
-            </div>
-          </Link>
-          <Link to={`/blogs/3`} className="recentPost">
-            <div className="recentImgContainer">
-              <img src={dummyImg} alt="post-image" loading="lazy" />
-            </div>
-            <div className="details">
-              <h6>description</h6>
-              <span>category</span>
-            </div>
-          </Link>
+          {AllBlogs.map((blog) => (
+            <Link to={`/blogs/3`} key={blog.id} className="recentPost">
+              <div className="recentImgContainer">
+                <img src={blog.img} alt="post-image" loading="lazy" />
+              </div>
+              <div className="details">
+                <h6>{shortenDescription(blog.title, 4)}</h6>
+                <a className="read-more-btn" href="">
+                  Read more
+                </a>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
 
