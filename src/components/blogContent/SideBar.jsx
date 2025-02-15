@@ -25,7 +25,7 @@ const SideBar = () => {
         </div>
         <div className="categs">
           <li>
-            <Link to={`/blogs`}>category</Link> <span>(3)</span>
+            <Link to={`/blogs`}>category</Link> <span>(6)</span>
           </li>
         </div>
       </div>
