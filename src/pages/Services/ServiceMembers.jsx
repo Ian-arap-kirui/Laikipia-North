@@ -4,18 +4,23 @@ import "./ServicePageStyles/serviceMembers.css";
 import { useLocation } from "react-router-dom";
 
 const ServiceMembers = ({ services }) => {
-  // Extract members from the services array
-  const members = services.flatMap((service) => service.members);
-  const location = useLocation(); // Hook to get the current location
-  const basePath = location.pathname.split("/")[2]; // Adjust index based on your routing structure
+  const location = useLocation();
+  const basePath = location.pathname.split("/")[2];
+
+  // Use only the service that matches the current route (e.g. "NGCDF")
+  const currentService = services.find(
+    (service) => service.link?.toLowerCase() === basePath?.toLowerCase()
+  );
+  const members = currentService?.members ?? [];
+
   return (
     <section className="serviceMembers">
       <div className="serviceMembersContainer">
         <h4 style={{ textTransform: "capitalize" }}>{basePath} Members</h4>
         <div className="memberCards">
-          {members.map((member, index) => (
+          {members.map((member) => (
             <Counselor
-              key={index}
+              key={member.name}
               name={member.name}
               designation={member.designation}
               image={member.profile}

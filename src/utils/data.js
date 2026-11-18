@@ -165,45 +165,61 @@ export const constituencyData = [
           "  Financial year figures for the constituency fund at a glance. All amountsare in Kenyan Shillings (KES); beneficiary figures are head counts.",
         members: [
           {
-            name: "Charles Kimotho Ndungu",
-            designation: "Male Youth Representative",
-            profile: CDFLOGO,
-            socialIcons: [faFacebook, faLinkedin, faX],
-          },
-          {
-            name: "Naundoi Lomoni Rukinyi",
-            designation: "Male Adult Representative",
-            profile: CDFLOGO,
-            socialIcons: [faFacebook, faLinkedin, faX],
-          },
-          {
-            name: "Julia Nyambura Wachira",
-            designation: "Female Youth Representative",
-            profile: CDFLOGO,
+            name: "Julia Cheporwas Lochingamoi",
+            designation: "Female Adult Representative",
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Julia-Lochingamoi.jpg",
             socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Maria Adeket Iyanai",
             designation: "Female Adult Representative",
-            profile: CDFLOGO,
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Maria-Adeket.jpg",
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Julia Nyambura Wachira",
+            designation: "Female Youth Representative",
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Julia-Wachira.jpg",
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+
+          {
+            name: "Naundoi Lomoni Rukinyi",
+            designation: "Male Adult Representative",
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Naundoi-Lomoni.jpg",
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+          {
+            name: "Daniel Kimalel Matunge",
+            designation: "Male Adult Representative",
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Daniel-Kimalel.jpg",
             socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
             name: "Dickson Makin Leshepa",
             designation: "Representative of Persons Living with Disability",
-            profile: CDFLOGO,
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Dickson-Leshapa-1.jpg",
+            socialIcons: [faFacebook, faLinkedin, faX],
+          },
+
+          {
+            name: "Charles Kimotho Ndungu",
+            designation: "Male Youth Representative",
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Charles-Ndungu.jpg",
             socialIcons: [faFacebook, faLinkedin, faX],
           },
           {
-            name: "Daniel Kimalel Matunge",
-            designation: "Nominee of the Constituency Office (Male)",
-            profile: CDFLOGO,
-            socialIcons: [faFacebook, faLinkedin, faX],
-          },
-          {
-            name: "Julia Cheporwas Lochingamoi",
-            designation: "Nominee of the Constituency Office (Female)",
-            profile: CDFLOGO,
+            name: "Rapasi Henry Naiputari",
+            designation: "Co-opted Member",
+            profile:
+              "https://laikipia-north.ngcdf.go.ke/wp-content/uploads/2025/07/Rapasi-Henry.jpg",
             socialIcons: [faFacebook, faLinkedin, faX],
           },
         ],
