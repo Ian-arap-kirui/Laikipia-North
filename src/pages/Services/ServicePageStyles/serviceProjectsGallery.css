@@ -1,0 +1,191 @@
+.projectsGallery {
+  margin: 1em 0 2.5em;
+}
+.projectsGalleryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.projectsGalleryHeader > h5 {
+  color: var(--mainColor);
+  font-weight: 700;
+}
+.projectsGalleryHeader > span {
+  background: var(--secondColor);
+  color: var(--mainColor);
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* Ward filter chips (same look as your service tab pills) */
+.projectsFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5em;
+}
+.projectsFilters > button {
+  width: auto;
+  border: 1px solid var(--mainColor);
+  background: transparent;
+  color: var(--blackColor);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: var(--fontFamily);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.projectsFilters > button:hover,
+.projectsFilters > button.active {
+  background: var(--mainColor);
+  color: var(--whiteColor);
+}
+
+/* Grid: min(100%, 280px) stops overflow on very narrow phones */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+}
+
+.projectCard {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  background: var(--secondColor);
+  box-shadow: var(--boxShadow);
+}
+.projectCard > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.projectCard:hover > img,
+.projectCard:focus-visible > img {
+  transform: scale(1.06);
+}
+
+.projectBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--mainColor);
+  color: var(--whiteColor);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Fading dark caption: readable on any photo */
+.projectCaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 56px 16px 16px;
+  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.projectCaption > strong {
+  font-family: var(--fontFamily);
+  font-size: 15px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.projectMeta {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* Enlarged view */
+.projectLightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.88);
+}
+.projectLightboxContent {
+  max-width: 900px;
+  width: 100%;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.projectLightboxContent > img {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  background: #000;
+}
+.projectLightboxText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 20px;
+}
+.projectLightboxText > h5 {
+  color: var(--mainColor);
+  font-size: 18px;
+}
+.projectLightboxText > span {
+  color: var(--paragraphColor);
+}
+.projectLightboxClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .projectCaption > strong {
+    font-size: 14px;
+  }
+}
