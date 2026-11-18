@@ -6,6 +6,8 @@ import { constituencyData } from "./data";
 import UpcomingEvents from "../sections/Events/UpcomingEvents";
 import "./serviceDetail.css";
 import LatestNews from "../sections/LatestNews/LatestNews";
+import NgcdfFundingStats from "../sections/Stats/NgcdfFundingStats";
+
 const ServiceDetailsContainer = ({ service }) => {
   const { serviceId } = useParams();
   const location = useLocation();
@@ -19,14 +21,16 @@ const ServiceDetailsContainer = ({ service }) => {
     location.pathname === `/services/${serviceId}` &&
     !isConstituencyOfficeRoute;
 
+  // Stats cards are shown only on the NGCDF service page
+  const isNgcdfRoute =
+    isServiceRoute && (serviceId ?? "").toUpperCase() === "NGCDF";
+
   return (
     <>
       {isServiceRoute && (
         <>
           <div className="serviceDetailsContainer">
-            <h4>{service.title}</h4>
-            <p>{service.description}</p>
-           1
+            {isNgcdfRoute && <NgcdfFundingStats service={service} />}
             <div className="constituencyOfficeEvents">
               <UpcomingEvents services={constituencyData[0].services} />
               <LatestNews />

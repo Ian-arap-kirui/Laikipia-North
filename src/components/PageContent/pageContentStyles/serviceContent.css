@@ -90,3 +90,51 @@
 .servicefilteredProjects > a > h4 {
   color: var(--mainColor);
 }
+@media only screen and (max-width: 991px) {
+  .serviceContentContainer .serviceImageContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .serviceContentContainer .serviceImageContainer > ul {
+    width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px 0 10px;
+
+    /* thin themed scrollbar (shows on desktop and when scrolling on mobile) */
+    scrollbar-width: thin;
+    scrollbar-color: var(--mainColor) var(--secondColor);
+
+    /* edge shadows: appear only on the side that still has content */
+    background:
+      linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0)) left center,
+      linear-gradient(to left, #fff 30%, rgba(255, 255, 255, 0)) right center,
+      radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0)) left center,
+      radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0)) right center;
+    background-repeat: no-repeat;
+    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+
+  .serviceContentContainer .serviceImageContainer > ul::-webkit-scrollbar {
+    height: 4px;
+  }
+  .serviceContentContainer .serviceImageContainer > ul::-webkit-scrollbar-track {
+    background: var(--secondColor);
+    border-radius: 4px;
+  }
+  .serviceContentContainer .serviceImageContainer > ul::-webkit-scrollbar-thumb {
+    background: var(--mainColor);
+    border-radius: 4px;
+  }
+
+  .serviceContentContainer .serviceImageContainer > ul > a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    margin: 0 18px 0 0;
+  }
+}

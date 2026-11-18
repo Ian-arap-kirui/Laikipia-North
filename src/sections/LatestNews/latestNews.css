@@ -4,88 +4,87 @@
   justify-content: center;
   flex-direction: column;
   margin: 5em 0;
+  width: 100%;          /* definite width, so child % values resolve */
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
+
 .latestNewsSectionContent {
   display: flex;
   position: relative;
-  width: 75%;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-}
-.latestNewsSectionContent {
+  width: 75%;
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 20px;
-  overflow: hidden; /* Hide overflow */
+  box-sizing: border-box;  /* padding is now included in the width */
+  overflow: hidden;
 }
 
 .carouselNews {
   display: flex;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Snap items to the scroll container */
-  scroll-behavior: smooth; /* Smooth scrolling */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  width: 100%;
+  min-width: 0;             /* lets the flex item shrink and scroll */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .carousel-item-news {
-  flex: 0 0 auto; /* Prevent items from shrinking */
-  scroll-snap-align: start; /* Snap items to the start of the container */
-  width: calc(100% / 3); /* Show 3 items at a time */
-  padding: 0 10px; /* Add spacing between items */
-  box-sizing: border-box; /* Include padding in width calculation */
+  flex: 0 0 33.3333%;       /* 3 items at a time */
+  scroll-snap-align: start;
+  padding: 0 10px;
+  box-sizing: border-box;
+  min-width: 0;
 }
-.carousel-item-news>div{
+.carousel-item-news > div {
   width: 100%;
 }
-.carousel-button-news {
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
+.carousel-item-news img {
+  max-width: 100%;          /* images can't force the card wider */
+}
+
+.latestNewsSectionContent > .carousel-button-news {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
-}
 
-.carousel-button-news.left {
-  left: 0px;
-
+  /* lock the size so no outside rule can stretch it */
   width: 30px;
+  min-width: 30px;
+  max-width: 30px;
   height: 30px;
+  padding: 0;
+  box-sizing: border-box;
+  flex: 0 0 30px;
+
   display: flex;
-  border-radius: 50%;
   justify-content: center;
   align-items: center;
-}
-
-.carousel-button-news.right {
-  right: 0px;
-  width: 30px;
-  height: 30px;
-  display: flex;
+  border: none;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
 }
 
-/* Responsive adjustments */
+.latestNewsSectionContent > .carousel-button-news.left  { left: 0; }
+.latestNewsSectionContent > .carousel-button-news.right { right: 0; }
+
 @media (max-width: 1024px) {
-  .carousel-item-news {
-    width: calc(100% / 2); /* Show 2 items at a time on tablets */
-  }
+  .carousel-item-news { flex-basis: 50%; }   /* 2 items */
 }
 
 @media only screen and (max-width: 767px) {
   .latestNewsSectionContent {
-    flex-wrap: wrap;
     width: 100%;
   }
 }
+
 @media (max-width: 600px) {
-  .carousel-item-news {
-    width: 100%; /* Show 1 item at a time on mobile */
-  }
+  .carousel-item-news { flex-basis: 100%; }  /* 1 item */
 }

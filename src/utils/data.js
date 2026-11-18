@@ -9,7 +9,19 @@ import nanyukiOffice from "../assets/lnc-nanyuki.png";
 import bungeTowers from "../assets/lnc-bunge-towers.png";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "./projectsData";
-
+export const ngcdfStats = {
+  financialYear: "FY 2025/26", // ← change to the correct FY label
+  totalBudget: 183266670,
+  openingBalance: 0,
+  reallocationFrom: 0,
+  reallocationTo: 0,
+  ngcdfExpenditure: 161428276,
+  ngcdfBalance: 21838394,
+  pmcExpenditure: 69067800,
+  pmcBalance: 16318750,
+  totalBeneficiaries: 15462,
+  pwdBeneficiaries: 151,
+};
 export const constituencyData = [
   {
     title: "Laikipia North Constituency",
@@ -146,11 +158,11 @@ export const constituencyData = [
     services: [
       {
         id: 0,
-        title: "NGCDF",
+        title: "NG-CDF Fund Snapshot",
         link: "NGCDF",
         img: nanyukiOffice,
         description:
-          "We manage and implement the National Government Constituencies Development Fund (NGCDF), focusing on funding projects in education, health, and infrastructure that impact the community.",
+          "  Financial year figures for the constituency fund at a glance. All amountsare in Kenyan Shillings (KES); beneficiary figures are head counts.",
         members: [
           {
             name: "Charles Kimotho Ndungu",
@@ -808,7 +820,7 @@ export const constituencyData = [
                 "path/to/Laikipia-North-Financial-Year-2017-2018.pdf";
             },
           },
-          
+
           {
             id: 10,
             filename: "Laikipia North Financial Year: 2016-2017",
