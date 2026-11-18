@@ -72,20 +72,13 @@ export const completedProjects = [
     id: 8,
     projectName: "Construction of Administration Block at Olgirgir Comprehensive School",
     ward: "Ward name",
-    financialYear: "2025/26",
+    financialYear: "2024/25",
     img: school6,
     description: "To improve administrative services.",
   },
+  
   {
     id: 9,
-    projectName: "Construction of Administration Block at Olgirgir Comprehensive School",
-    ward: "Ward name",
-    financialYear: "2025/26",
-    img: school6,
-    description: "To improve administrative services.",
-  },
-  {
-    id: 10,
     projectName: "Construction of Administration Block at Olokirisai Comprehensive School",
     ward: "Ward name",
     financialYear: "2025/26",
@@ -93,7 +86,7 @@ export const completedProjects = [
     description: "To improve administrative services.",
   },
   {
-    id: 11,
+    id: 10,
     projectName: "Construction of Staff Houses at Reteti Comprehensive School",
     ward: "Ward name",
     financialYear: "2025/26",
@@ -101,7 +94,7 @@ export const completedProjects = [
     description: "To improve staff accommodation.",
   },
   {
-    id: 12,
+    id: 11,
     projectName: "Construction of Staff Houses at Sieku Comprehensive School",
     ward: "Ward name",
     financialYear: "2025/26",
