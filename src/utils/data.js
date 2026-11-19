@@ -224,7 +224,7 @@ export const constituencyData = [
           },
         ],
         allocations: [
-          { id: 0, year: "2026/2027", amount: "182,982,585.00" },
+          { id: 0, year: "2026/2027", amount: "183,266,670.00" },
           { id: 1, year: "2025/2026", amount: "182,982,585.00" },
           { id: 2, year: "2024/2025", amount: "170,469,856.74" },
           { id: 3, year: "2023/2024", amount: "166,593,720.00" },
