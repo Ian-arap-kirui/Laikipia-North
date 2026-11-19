@@ -7,6 +7,7 @@ import UpcomingEvents from "../sections/Events/UpcomingEvents";
 import "./serviceDetail.css";
 import LatestNews from "../sections/LatestNews/LatestNews";
 import NgcdfFundingStats from "../sections/Stats/NgcdfFundingStats";
+import NgcdfDataDownload from "../sections/Stats/NgcdfDataDownload";
 
 const ServiceDetailsContainer = ({ service }) => {
   const { serviceId } = useParams();
@@ -30,7 +31,12 @@ const ServiceDetailsContainer = ({ service }) => {
       {isServiceRoute && (
         <>
           <div className="serviceDetailsContainer">
-            {isNgcdfRoute && <NgcdfFundingStats service={service} />}
+            {isNgcdfRoute && (
+              <>
+                <NgcdfFundingStats service={service} />
+                <NgcdfDataDownload />
+              </>
+            )}
             <div className="constituencyOfficeEvents">
               <UpcomingEvents services={constituencyData[0].services} />
               <LatestNews />
